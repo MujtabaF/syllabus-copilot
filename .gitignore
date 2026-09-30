@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Secrets
+.env
+
+# Local data (real syllabi may contain personal info)
+data/
+*.pdf
+!evals/golden/*.pdf
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
