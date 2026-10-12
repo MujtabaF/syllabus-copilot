@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2022,
+  "expected": {
+    "course_code": "18.05",
+    "course_name": "Introduction to Probability and Statistics",
+    "deliverables": []
+  }
+}

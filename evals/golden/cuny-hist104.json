@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2025,
+  "expected": {
+    "course_code": "History 104",
+    "course_name": "American History, 1865-Present",
+    "deliverables": []
+  }
+}

@@ -40,9 +40,12 @@ class GoldenExample(BaseModel):
 
 
 def load_golden(directory: Path) -> list[GoldenExample]:
+    """Load every labeled example. Label files marked `"todo": true` are skipped."""
     examples = []
     for label_path in sorted(directory.glob("*.json")):
         label = json.loads(label_path.read_text())
+        if label.get("todo"):
+            continue
         pdf_path = label_path.with_suffix(".pdf")
         if pdf_path.exists():
             text = pdf_to_text(pdf_path)
@@ -54,6 +57,13 @@ def load_golden(directory: Path) -> list[GoldenExample]:
             )
         )
     return examples
+
+
+def unlabeled(directory: Path) -> list[str]:
+    """IDs of label files still marked `"todo": true`."""
+    return [
+        p.stem for p in sorted(directory.glob("*.json")) if json.loads(p.read_text()).get("todo")
+    ]
 
 
 def _normalize(title: str) -> str:

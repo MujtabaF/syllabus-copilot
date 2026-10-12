@@ -39,6 +39,10 @@ Scores are micro-averaged: every deliverable counts equally, across all syllabi.
    ```
 3. Run `pytest`: it checks every label file against the schema.
 
+Files marked `"todo": true` are skipped by the eval. The real syllabi start that way, with
+the course and year filled in and an empty `deliverables` list. To label one, add its
+deliverables and delete the `"todo": true` line.
+
 ### Labeling rules
 
 Labels must follow the same rules as the prompt, or the scores measure disagreements

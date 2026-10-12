@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2025,
+  "expected": {
+    "course_code": "CS 113",
+    "course_name": "Introduction to Computer Science I",
+    "deliverables": []
+  }
+}

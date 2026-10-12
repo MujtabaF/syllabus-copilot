@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2016,
+  "expected": {
+    "course_code": "14.54",
+    "course_name": "International Trade",
+    "deliverables": []
+  }
+}

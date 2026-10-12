@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2016,
+  "expected": {
+    "course_code": "6.0002",
+    "course_name": "Introduction to Computational Thinking and Data Science",
+    "deliverables": []
+  }
+}

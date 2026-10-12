@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2025,
+  "expected": {
+    "course_code": "EDF 101",
+    "course_name": "Education First Year Seminar",
+    "deliverables": []
+  }
+}

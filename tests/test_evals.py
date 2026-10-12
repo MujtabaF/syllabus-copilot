@@ -10,6 +10,7 @@ from syllabus_copilot.evals import (
     run_eval,
     score,
     title_similarity,
+    unlabeled,
 )
 from syllabus_copilot.models import Deliverable, Syllabus
 
@@ -68,6 +69,22 @@ def test_golden_labels_are_valid():
     for example in examples:
         assert example.text.strip(), f"{example.id} has no syllabus text"
         assert example.expected.deliverables, f"{example.id} has no labeled deliverables"
+
+
+def test_todo_labels_are_skipped(tmp_path):
+    (tmp_path / "done.txt").write_text("Midterm Oct 21")
+    (tmp_path / "done.json").write_text(
+        json.dumps(
+            {"year": 2026, "expected": {"deliverables": [{"title": "Midterm", "type": "exam"}]}}
+        )
+    )
+    (tmp_path / "pending.txt").write_text("Final TBA")
+    (tmp_path / "pending.json").write_text(
+        json.dumps({"todo": True, "year": 2026, "expected": {"deliverables": []}})
+    )
+
+    assert [ex.id for ex in load_golden(tmp_path)] == ["done"]
+    assert unlabeled(tmp_path) == ["pending"]
 
 
 def test_perfect_model_scores_100_percent():

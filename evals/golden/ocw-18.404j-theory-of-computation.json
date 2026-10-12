@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2020,
+  "expected": {
+    "course_code": "18.404J",
+    "course_name": "Theory of Computation",
+    "deliverables": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2023,
+  "expected": {
+    "course_code": "14.01",
+    "course_name": "Principles of Microeconomics",
+    "deliverables": []
+  }
+}

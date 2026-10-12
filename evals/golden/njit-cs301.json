@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2025,
+  "expected": {
+    "course_code": "CS 301",
+    "course_name": "Introduction to Data Science",
+    "deliverables": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2025,
+  "expected": {
+    "course_code": "AD 111",
+    "course_name": "Communication in Art + Design: Traditional Media",
+    "deliverables": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "todo": true,
+  "year": 2023,
+  "expected": {
+    "course_code": "FIQWS 10105",
+    "course_name": "Killer Stories (Writing)",
+    "deliverables": []
+  }
+}

@@ -4,7 +4,7 @@ from datetime import date, datetime
 from pathlib import Path
 
 from .config import settings
-from .evals import PROMPT_VERSION, format_table, load_golden, run_eval
+from .evals import PROMPT_VERSION, format_table, load_golden, run_eval, unlabeled
 from .extract import extract_syllabus
 from .pdf import pdf_to_text
 
@@ -38,7 +38,10 @@ def main() -> None:
 
 def run_evals(models: list[str], golden: Path, out: Path) -> None:
     examples = load_golden(golden)
-    print(f"{len(examples)} golden syllabi, prompt version {PROMPT_VERSION}\n")
+    print(f"{len(examples)} golden syllabi, prompt version {PROMPT_VERSION}")
+    if todo := unlabeled(golden):
+        print(f"Skipping {len(todo)} not labeled yet: {', '.join(todo)}")
+    print()
     out.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
 
