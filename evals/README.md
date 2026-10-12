@@ -30,7 +30,9 @@ Scores are micro-averaged: every deliverable counts equally, across all syllabi.
 ## Adding a golden syllabus
 
 1. Put the syllabus in `golden/` as `<id>.pdf`, or as `<id>.txt` if you've pasted the text.
-   Remove names, emails and other personal details first.
+   Remove names, emails and other personal details first. Use only syllabi you're allowed
+   to share (your own courses, or openly licensed ones), and credit them in
+   [`golden/SOURCES.md`](golden/SOURCES.md).
 2. Write `golden/<id>.json` **by hand from the syllabus, not from model output**:
    ```json
    {"year": 2026, "expected": {"course_code": "...", "course_name": "...", "deliverables": [...]}}
@@ -48,6 +50,13 @@ between labels instead of model errors.
 - Participation and similar ongoing marks are type `other` with a `null` date.
 - `due_date` is `null` when the syllabus says TBA, "during the exam period", or gives no date.
 - `weight` is `null` when the syllabus gives no weight.
+- Recurring work with no stated count ("reading questions", "weekly quizzes" with no
+  number) is one entry carrying the whole group weight, with a `null` date.
+- "Drop the lowest" or "best 7 of 9" rules don't change the count: list all 9 and split
+  the group weight across all of them.
+- A date given only as a class session or week number ("Session 12", "Week 7") is `null`.
+- `year` is the year the term starts in. For dates in a term that crosses New Year, use
+  the right year for each date.
 
 ## Golden set
 
@@ -56,6 +65,12 @@ between labels instead of model errors.
 | `synthetic-cs101` | Synthetic | Grading table, group weights, dates without a year, TBA final, an ungraded item |
 | `synthetic-stat200` | Synthetic | Weights and dates in prose, a multi-part project, an undated presentation |
 | `synthetic-hist210` | Synthetic | Dates only in the weekly schedule, an ungraded milestone |
+| `ocw-*` (5, not labeled yet) | MIT OpenCourseWare | Real syllabi in economics, statistics, theory and CS; weights in prose, drop-lowest rules, no calendar dates |
+| `njit-*` (6, not labeled yet) | NJIT Digital Commons | Real CS and art syllabi; grading tables, midterm dates, drop-lowest rules, weights that don't add up |
+| `cuny-*` (3, not labeled yet) | CUNY Academic Works | Real history, writing and education syllabi; due dates in weekly schedules, points instead of percentages, extra credit, two-column layouts |
+
+Syllabus files without a `.json` label are skipped until they're labeled. Sources and
+licenses are in [`golden/SOURCES.md`](golden/SOURCES.md).
 
 The synthetic syllabi check that the harness works. Report metrics only from a set that
 includes real syllabi.

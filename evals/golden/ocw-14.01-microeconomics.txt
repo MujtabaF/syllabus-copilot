@@ -1,0 +1,309 @@
+--- syllabus ---
+Course Meeting Times
+
+Lectures: 2 sessions/week; 1 hour/session 
+
+Recitations: 1 session/week; 1 hour/session
+
+Prerequisites 
+
+Some calculus at the level of 18.01 Single Variable Calculus will be used. Otherwise there are no prerequisites. 
+
+Textbook 
+
+There is no formal textbook for the course, but students can access Prof. Gruber’s free online introductory microeconomics class from MITx Online. This is a simpler version of the same material. This open online course is available for free, but students must sign up to enroll. 
+
+If students are interested in further reading, the following book is recommended: Perloff, Jeffrey M. Microeconomics, 7th Edition. Addison-Wesley, 2012. ISBN: 9780321160737.
+
+Course Requirements
+
+Problem Sets
+
+There will be eight mandatory problem sets which will be individually graded and returned to the students. At the end of the term, students will have the best seven homework grades cumulated up, and this will count for 25% of the final course grade. Late problem sets will not be accepted for any reason.
+
+Exams
+
+There will be one mid-term exam. This will be two hours long and will count as 25% of the grade. There will also be a three-hour final during finals period, which will be cumulative and cover all of the course materials. This will count as the remaining 50% of the grade. 
+
+Grading Policy 
+
+At the end of the semester, the faculty will report internal grades to the MIT registrar with + and – modifiers, where appropriate, and only for grades A, B, C. The faculty will be happy to regrade any problem set or exam in entirety. Consequently it is possible for your revised grade to fall as well as rise. If you are a first-year student at MIT, the faculty will evaluate your performance on the first exam and first 3 problem sets, and if it falls below passing we will send out a warning to you and your advisor.
+
+Feedback
+
+We will create a Google survey for you to submit your comments/questions about the course. The form is completely anonymous. We ask you to identify your section to better address your concerns, but this is also optional. Please use this form at any point during the semester. Questions/comments will be addressed in the general class forum. 
+
+Tutoring
+
+Students are encouraged to seek help from the faculty, who will hold regular office hours. Tutorials will be held regularly throughout the semester. The faculty can also arrange for individual tutoring for students who are having exceptional difficulty.
+
+Exam Conflicts, Illness, and Makeups
+
+Students with exam conflicts must give written notice to the head Teaching Assistant (TA) at least two weeks in advance. A student who happens to be ill on the day of the exam should contact one of the consulting deans in Student Support Services, who will determine whether the student has a valid excuse and then inform the head TA. The head TA will schedule a makeup exam, to be given on a fixed date and time, for students with a valid excuse due to a conflict or illness.
+
+Students with Disabilities
+
+We will make every reasonable accommodation for any student with any physical or mental disability. A student who needs special accommodations for an exam should present to the head TA—at least two weeks in advance of the scheduled exam—a letter from MIT’s Student Disability Services certifying the student’s disability and requesting specific accommodations. The contents of the letter will be treated confidentially.
+
+Individual versus Joint Work
+
+All assignments, including homework and exams, will be submitted and graded individually. Students may work together on problem sets, but they all have to individually write up the answer. Also, collaboration during exams will be considered a breach of academic honesty. 
+
+Academic Honesty
+
+When we suspect that a student has engaged in academic dishonesty, we will follow the procedures described in the latest MIT guidelines on Academic Misconduct and Dishonesty.
+
+Course Info
+
+Instructor
+
+Prof. Jonathan Gruber
+
+Departments
+
+Economics
+
+As Taught In
+
+Fall
+
+2023
+
+Level
+
+Undergraduate
+
+Topics
+
+Social Science
+
+Economics
+
+Microeconomics
+
+Learning Resource Types
+
+grading
+Exam Solutions
+
+grading
+Exams
+
+co_present
+
+Instructor Insights
+
+notes
+Lecture Notes
+
+theaters
+Lecture Videos
+
+assignment_turned_in
+Problem Set Solutions
+
+assignment
+Problem Sets
+
+Download Course
+
+Over 2,500 courses & materials
+
+Freely sharing knowledge with learners and educators around the world. Learn more
+
+© 2001–2026 Massachusetts Institute of Technology
+
+Accessibility
+
+Creative Commons License
+
+Terms and Conditions
+
+Proud member of:
+
+© 2001–2026 Massachusetts Institute of Technology
+
+You are leaving MIT OpenCourseWare
+
+close
+
+Please be advised that external sites may have terms and conditions,
+including license rights, that differ from ours. MIT OCW is not responsible
+for any content on third party sites, nor does a link suggest an endorsement
+of those sites and/or their content.
+
+Stay Here
+
+Continue
+
+--- calendar ---
+Lecture 1: Introduction and Supply & Demand
+
+Lecture 2: Preferences and Utility Functions
+
+Lecture 3: Budget Constraints and Constrained Choice
+
+Problem set 1 posted
+
+Lecture 4: Demand Curves and Income/Substitution Effects
+
+Lecture 5: Production Theory
+
+Lecture 6: Costs
+
+Lecture 7: Competition I
+
+Problem set 1 due
+
+Problem set 2 posted
+
+Lecture 8: Competition II 
+
+Lecture 9: Supply and Demand & Consumer/Producer Surplus
+
+Problem set 2 due
+
+Problem set 3 posted
+
+Lecture 10: Welfare Economics
+
+Problem set 3 due
+
+Problem set 4 posted
+
+Lecture 11: Monopoly I
+
+Lecture 12: Monopoly II
+
+Problem set 4 due
+
+Lecture 13: Oligopoly I
+
+Mid-term exam
+
+Lecture 14: Oligopoly II
+
+Problem set 5 posted
+
+Lecture 15: Input Markets I—Labor Market
+
+Lecture 16: Input Markets II—Labor and Capital 
+
+Problem set 5 due
+
+Problem set 6 posted
+
+Lecture 17: Making Choices over Time
+
+Lecture 18: Introduction to Trade
+
+Lecture 19: International Trade: Welfare and Policy
+
+Lecture 20: Uncertainty
+
+Problem set 6 due
+
+Problem set 7 posted
+
+Lecture 21: Social Insurance
+
+Lecture 22: Efficiency and Equity
+
+Problem set 7 due
+
+Problem set 8 posted
+
+Lecture 23: Government Redistribution and Taxation
+
+Lecture 24: Externalities
+
+Problem set 8 due
+
+Lecture 25: Behavioral Economics
+
+Lecture 26: Healthcare Economics 
+
+Final Exam
+
+Course Info
+
+Instructor
+
+Prof. Jonathan Gruber
+
+Departments
+
+Economics
+
+As Taught In
+
+Fall
+
+2023
+
+Level
+
+Undergraduate
+
+Topics
+
+Social Science
+
+Economics
+
+Microeconomics
+
+Learning Resource Types
+
+grading
+Exam Solutions
+
+grading
+Exams
+
+co_present
+
+Instructor Insights
+
+notes
+Lecture Notes
+
+theaters
+Lecture Videos
+
+assignment_turned_in
+Problem Set Solutions
+
+assignment
+Problem Sets
+
+Download Course
+
+Over 2,500 courses & materials
+
+Freely sharing knowledge with learners and educators around the world. Learn more
+
+© 2001–2026 Massachusetts Institute of Technology
+
+Accessibility
+
+Creative Commons License
+
+Terms and Conditions
+
+Proud member of:
+
+© 2001–2026 Massachusetts Institute of Technology
+
+You are leaving MIT OpenCourseWare
+
+close
+
+Please be advised that external sites may have terms and conditions,
+including license rights, that differ from ours. MIT OCW is not responsible
+for any content on third party sites, nor does a link suggest an endorsement
+of those sites and/or their content.
+
+Stay Here
+
+Continue

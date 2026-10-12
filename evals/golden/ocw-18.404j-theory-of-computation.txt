@@ -1,0 +1,619 @@
+--- syllabus ---
+Course Meeting Times
+
+Lectures: 2 sessions / week, 1.5 hours / session
+
+Recitations: 1 session / week, 1 hour / session
+
+Prerequisites
+
+6.042J Mathematics for Computer Science
+
+18.200 Principles of Discrete Applied Mathematics
+
+Course Description
+
+This course emphasizes computability and computational complexity theory. Topics include regular and context-free languages, decidable and undecidable problems, reducibility, recursive function theory, time and space measures on computation, completeness, hierarchy theorems, inherently complex problems, oracles, probabilistic computation, and interactive proof systems.
+
+Course Outline
+
+Automata and Language Theory (2 weeks)
+
+Finite automata, regular expressions, push-down automata, context-free grammars, pumping lemmas.
+
+Computability Theory (3 weeks)
+
+Turing machines, the Church-Turing thesis, decidability, the halting problem, reducibility, the recursion theorem.
+
+Complexity Theory (7 weeks)
+
+Time and space measures of complexity, complexity classes P, NP, L, NL, PSPACE, BPP and IP, complete problems, the P versus NP conjecture, quantifiers and games, hierarchy theorems, provably hard problems, relativized computation and oracles, probabilistic computation, interactive proof systems.
+
+Online Course Format
+
+This course is offered entirely online while the MIT campus is shut down due to the Covid-19 pandemic. Lectures are offered live online via Zoom. The lectures are also recorded for viewing at a later time to accomodate students who cannot participate in the live lectures due to time-zone differences or other reasons. Weekly TA-led recitations are offered both live online and in person, at various times.
+
+Following student recommendations, we can de-emphasize (but not eliminate) the midterm and final exams by adding graded live mini-quizzes for credit during the lectures, to be conducted via Zoom’s polling feature. For students viewing a recorded lecture, an alternate timed and graded recorded mini-quiz will be available, but it must be completed within 24 hours of the original live lecture. Students may chose whether to take the live mini-quiz or the recorded mini-quiz on a lecture-by-lecture basis, and if both are taken for any given lecture, the higher score will be used. We expect that all students will complete the exams and mini-quizzes on their own individually, without assistance from others.
+
+Textbook
+
+Sipser, Michael. Introduction to the Theory of Computation. 3rd ed. Cengage Learning, 2012. ISBN: 9781133187790.
+
+You may use the second edition, but it is missing some additional practice problems. Errata for 2nd edition of textbook.
+
+We will cover Chapters 1, 2 (except 2.4), 3, 4, 5, 6.1, 7, 8, 9.1, 9.2, 10.2 (except the part on Primality), and 10.4 through Theorem 10.33.
+
+Recitations
+
+Recitations are primarily for going over lecture material in more detail with additional examples and for answering questions. Recitation attendance is optional, and you may attend any recitation you wish. BUT, if you are having trouble, we expect you to attend recitations weekly, and active participation may improve low grades.
+
+Grading
+
+|
+
+ACTIVITIES
+
+|
+
+PERCENTAGES
+
+|
+
+Homework
+
+|
+
+35%
+
+|
+
+Quizzes
+
+|
+
+25%
+
+|
+
+Midterm Exam
+
+|
+
+15%
+
+|
+
+Final Exam
+
+|
+
+25%
+
+Homework
+
+35% of grade. There will be 6 biweekly problem sets. Cooperating on homework is allowed and may be helpful, but you are strongly encouraged to spend some time thinking about each problem yourself first. Solutions must be written up individually (not copied). Using course bibles or other outside or online materials is not permitted.
+
+Quizzes
+
+25% of grade. Given during each live lecture and following each recorded lecture.
+
+Exams
+
+One midterm (15% of grade) during a class session and one final exam (25% of grade) during finals week. The exams are both open book and open notes. You may only use the class textbook and notes you took in lectures and in recitation.
+
+Course Info
+
+Instructor
+
+Prof. Michael Sipser
+
+Departments
+
+Mathematics
+
+Electrical Engineering and Computer Science
+
+As Taught In
+
+Fall
+
+2020
+
+Level
+
+Undergraduate
+
+Graduate
+
+Topics
+
+Engineering
+
+Computer Science
+
+Theory of Computation
+
+Mathematics
+
+Computation
+
+Discrete Mathematics
+
+Learning Resource Types
+
+edit_note
+Editable Files
+
+grading
+Exams
+
+co_present
+
+Instructor Insights
+
+notes
+Lecture Notes
+
+theaters
+Lecture Videos
+
+assignment
+Problem Sets
+
+Download Course
+
+Over 2,500 courses & materials
+
+Freely sharing knowledge with learners and educators around the world. Learn more
+
+© 2001–2026 Massachusetts Institute of Technology
+
+Accessibility
+
+Creative Commons License
+
+Terms and Conditions
+
+Proud member of:
+
+© 2001–2026 Massachusetts Institute of Technology
+
+You are leaving MIT OpenCourseWare
+
+close
+
+Please be advised that external sites may have terms and conditions,
+including license rights, that differ from ours. MIT OCW is not responsible
+for any content on third party sites, nor does a link suggest an endorsement
+of those sites and/or their content.
+
+Stay Here
+
+Continue
+
+--- calendar ---
+|
+
+SES #
+
+|
+
+TOPICS
+
+|
+
+KEY DATES
+
+|
+
+1
+
+|
+
+Introduction, Finite Automata, Regular Expressions
+
+|
+
+ 
+
+|
+
+2
+
+|
+
+Nondeterminism, Closure Properties, Regular Expressions → Finite Automata
+
+|
+
+ 
+
+|
+
+3
+
+|
+
+The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs
+
+|
+
+ 
+
+|
+
+4
+
+|
+
+Pushdown Automata, CFG ↔ PDA
+
+|
+
+ 
+
+|
+
+5
+
+|
+
+The CF Pumping Lemma, Turing Machines
+
+|
+
+Homework 1 due
+
+|
+
+6
+
+|
+
+TM Variants, the Church-Turing Thesis
+
+|
+
+ 
+
+|
+
+7
+
+|
+
+Decision Problems for Automata and Grammars
+
+|
+
+ 
+
+|
+
+8
+
+|
+
+Undecidability
+
+|
+
+ 
+
+|
+
+9
+
+|
+
+Reducibility
+
+|
+
+Homework 2 due
+
+|
+
+10
+
+|
+
+The Computation History Method
+
+|
+
+ 
+
+|
+
+11
+
+|
+
+The Recursion Theorem and Logic
+
+|
+
+ 
+
+|
+
+12
+
+|
+
+Time Complexity
+
+|
+
+Homework 3 due
+
+|
+
+13
+
+|
+
+Midterm Exam
+
+|
+
+ 
+
+|
+
+14
+
+|
+
+P and NP, SAT, Poly-time Reducibility
+
+|
+
+ 
+
+|
+
+15
+
+|
+
+NP-Completeness
+
+|
+
+ 
+
+|
+
+16
+
+|
+
+Cook-Levin Theorem
+
+|
+
+Homework 4 due
+
+|
+
+17
+
+|
+
+Space Complexity, PSPACE, Savitch’s Theorem
+
+|
+
+ 
+
+|
+
+18
+
+|
+
+PSPACE-Completeness
+
+|
+
+ 
+
+|
+
+19
+
+|
+
+Games, Generalized Geography
+
+|
+
+ 
+
+|
+
+20
+
+|
+
+L and NL, NL = coNL
+
+|
+
+Homework 5 due
+
+|
+
+21
+
+|
+
+Hierarchy Theorems
+
+|
+
+ 
+
+|
+
+22
+
+|
+
+Provably Intractable Problems, Oracles
+
+|
+
+ 
+
+|
+
+23
+
+|
+
+Probabilistic Computation, BPP
+
+|
+
+ 
+
+|
+
+24
+
+|
+
+Probabilistic Computation (cont.)
+
+|
+
+ 
+
+|
+
+25
+
+|
+
+Interactive Proof Systems, IP
+
+|
+
+Homework 6 due
+
+|
+
+26
+
+|
+
+coNP ⊆ IP
+
+|
+
+ 
+
+|
+
+27
+
+|
+
+Final Exam
+
+|
+
+ 
+
+Course Info
+
+Instructor
+
+Prof. Michael Sipser
+
+Departments
+
+Mathematics
+
+Electrical Engineering and Computer Science
+
+As Taught In
+
+Fall
+
+2020
+
+Level
+
+Undergraduate
+
+Graduate
+
+Topics
+
+Engineering
+
+Computer Science
+
+Theory of Computation
+
+Mathematics
+
+Computation
+
+Discrete Mathematics
+
+Learning Resource Types
+
+edit_note
+Editable Files
+
+grading
+Exams
+
+co_present
+
+Instructor Insights
+
+notes
+Lecture Notes
+
+theaters
+Lecture Videos
+
+assignment
+Problem Sets
+
+Download Course
+
+Over 2,500 courses & materials
+
+Freely sharing knowledge with learners and educators around the world. Learn more
+
+© 2001–2026 Massachusetts Institute of Technology
+
+Accessibility
+
+Creative Commons License
+
+Terms and Conditions
+
+Proud member of:
+
+© 2001–2026 Massachusetts Institute of Technology
+
+You are leaving MIT OpenCourseWare
+
+close
+
+Please be advised that external sites may have terms and conditions,
+including license rights, that differ from ours. MIT OCW is not responsible
+for any content on third party sites, nor does a link suggest an endorsement
+of those sites and/or their content.
+
+Stay Here
+
+Continue

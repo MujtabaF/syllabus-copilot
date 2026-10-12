@@ -1,0 +1,269 @@
+--- page 1 ---
+New Jersey Institute of Technology New Jersey Institute of Technology
+Digital Commons @ NJIT Digital Commons @ NJIT
+
+Computer Science Syllabi   NJIT Syllabi
+
+Fall 2025
+
+CS 331-001: Data Management Systems Design CS 331-001: Data Management Systems Design
+
+Joann Eren
+
+Follow this and additional works at: https://digitalcommons.njit.edu/cs-syllabi
+
+Recommended Citation Recommended Citation
+Eren, Joann, "CS 331-001: Data Management Systems Design" (2025). Computer Science Syllabi. 623.
+https://digitalcommons.njit.edu/cs-syllabi/623
+
+This Syllabus is brought to you for free and open access by the NJIT Syllabi at Digital Commons @ NJIT. It has
+been accepted for inclusion in Computer Science Syllabi by an authorized administrator of Digital Commons @
+NJIT. For more information, please contact [redacted email].
+
+--- page 2 ---
+NJIT, YWCC, Department of Computer Science
+   CS 331: Database System Design and Management
+
+   Fall 2025
+
+Prerequisites: CS 114 or CS 116 or IT 114
+
+Objective
+
+The objective of the course is to provide an introduction to modern database systems.  It focuses
+on the following issues: data models, conceptual data   models, the Entity   -Relationship model, the
+Relational  model,  formal  database  query  languages,   relational  algebra,  the  standard  database
+language   SQL,   external   hashing   and   indexing,   formal   database   design   theory,   functional
+dependencies and normal forms, and transaction processing.
+
+The students will learn how to design   , create,  query, and update a database through a small project.
+They will get hands   -on experience with modern database management systems using the standard
+database language SQL.
+
+Course (learning) outcomes
+
+   LO1:   Understand  the  data  requirements  of  contemporary  organizations  and  how  database
+   management systems meet them
+   LO2: Develop conceptual data model specifications
+   LO3: Design and implement database applications
+   LO4: Understand how data is stored, retrieved   , and maintained in different types of databases
+   LO5: Gain experience with the existing database management systems
+
+Time and Place
+
+Date and time:   Monday,   1:00 – 2:20 PM (CKB 303)
+   Thursday   , 1:00 – 2:20 PM (CKB 303   )
+Instructor
+Dr. Joann (Canan) Eren
+
+Office:   GITC 4414
+Office hours:   Thursday:  4:00 PM – 5:00 PM
+
+   (Office hours are not valid on the Reading day, during exam periods, holidays, and breaks)
+   Send me an email to schedule an online meeting.
+
+Web page:   https://people.njit.edu/faculty/ce85
+Email:   [redacted email]
+Textbook
+
+--- page 3 ---
+Fundamentals of Database Systems, 7th Edition,
+ R. Elmasri and S.B. Navathe
+ Pearson, © 2016.
+ ISBN-10: 0-13-397077-9
+ ISBN-13:  978-0-13-397077-7
+
+Supplements: Instructor-generated material.
+
+COURSE OUTLINE – Topics to be covered in the course
+
+   BASIC CONCEPTS - GENERALITIES ABOUT DATABASES
+ Week 1   Introduction to databases. Database users
+   Database systems concepts and architecture. Data models.
+   ASSIGNMENT 1
+   CONCEPTUAL MODELING, DATABASE DESIGN
+ Week 2, 3   The Entity Relationship (ER) model
+   The Enhanced Entity Relationship (EER) model
+   ASSIGNMENT 2
+   FROM CONCEPTUAL MODELS TO LOGICAL MODELS
+ Week 4   Mapping ER and EER diagrams to Relational schemas
+   ASSIGNMENT 3
+   THE RELATIONAL MODEL: CONCEPTS AND FORMAL QUERY
+ Week 5, 6   LANGUAGES
+   Basic Definitions, Integrity Constraints, Update Operations
+   Relational Algebra
+   Relational Algebra Example Queries
+   ASSIGNMENT 4
+ Week 7   Midterm
+   SQL: A STANDARD DATABASE LANGUAGE
+ Week 8, 9, 10   Basic Queries
+   Complex Queries, Aggregate Functions, and Grouping
+   Data Change Statements, Views, and Complex Constraints
+   Using SQL in an application - Database programming
+   FORMAL DATABASE DESIGN THEORY
+ Week 11, 12   Functional dependencies (FDs), Inference of FDs,
+   Normal forms
+   ASSIGNMENT 5
+   DATABASE PHYSICAL ORGANIZATION
+ Week 13, 14   File Organizations
+   Indexing
+
+--- page 4 ---
+Course organization
+
+•   The slides for each lecture are available before the class. A good practice is to read from your
+   book the material to be taught in class and to come prepared.
+
+•   Five homework  assignments  will  be  given,   containing  exercises  on  selected  topics.  Their
+   solutions will be covered during class hours.
+
+•   You will work in groups on a project that has three deliverables during the semester. A project
+   demonstration (or video) is required for the last deliverable of the project.
+
+•   There will be two exams: a midterm halfway through the semester, and a final on the last day
+   of the class.
+
+•   Lecture slides, exercises, homework assignments, and project requirements will be available
+   for downloading in due time on this web page. Important announcements will also be placed
+   on it. Bookmark the course web page. It is a "living document" and you have to visit it at least
+   once a week.
+
+Homework assignments
+There will be five homework assignments. If you work reasonably on them, you will get all the
+points. Solutions are provided for you to compare with your own solutions.
+
+Project
+
+A project will be assigned to design and implement a simple database system using a modern
+database   management   system.   It   will   proceed   progressively   through   different   steps.   The
+methodology for database development learned in class should be used.
+
+Project groups
+
+Groups of at most 3 students are required. You can choose the classmates you want to work with.
+You can also work by yourself if you prefer. In order to form a group, you must fill out a form
+available on the class Google Drive page. If you do not express a preference, I will randomly put
+you in a group.
+
+Project description and deliverables:   The project has three deliverables.
+
+   Deliverable 1: A possible solution E/R diagram (You will use this one for the second
+   phase of the project).
+
+   Deliverable 2: A possible solution Relational Schema for Phase 2 (You will use this one
+   for the third phase of the project).
+
+--- page 5 ---
+Deliverable 3: Presentation and final report.
+
+Submissions and Late Policy
+
+The five homework assignments and all 3 project deliverables should be submitted on or
+before the day and time they are due through Canvas. Every Canvas submission should be
+a SINGLE FILE in MS Word or PDF format only.
+
+Late submissions will not be accepted or will get penalties.
+
+MIDTERM and FINAL exams
+All exams will be composed of several exercises/questions to be answered.
+
+Make-up Exams:
+Make-up exams need to be approved by the Instructor.
+Consideration will be given to those students who contact me before the exam (via e-mail or
+phone) and provide a valid, documented reason for missing the exam.
+
+Grading
+The midterm, the assignments, the project, and the final exam contribute to the course grade as
+follows:
+
+   Midterm   25%
+
+   Project   30%   Deliverables and demonstration
+
+   Assignments   10%   Five assignments
+
+   Final   35%
+
+Attendance and Participation
+
+You are supposed to attend all the classes. Participation is highly encouraged to make the class
+more interactive. Class attendance and participation are taken into consideration by the instructor
+for the evaluation of the students. Experience shows that students who do not attend the classes do
+not perform well in the midterm and final exams. If you miss one class, be sure to consult one of
+your  classmates  about  the  content  of  the  lecture  and  visit  the  course  web  page  to  get  notes,
+exercises, assignments, deadlines, and announcements.
+
+Academic Integrity
+
+ “Academic Integrity is the cornerstone of higher education and is central to the
+ideals of this course and the university. Cheating is strictly prohibited and devalues
+the degree that you are working on. As a member of the NJIT community, it is your
+
+--- page 6 ---
+responsibility to protect your educational investment by knowing and following the
+academic code of integrity policy that is found at:
+
+http://www5.njit.edu/policies/sites/policies/files/academic-integrity-code.pdf.
+
+Please  note  that  it  is  my  professional  obligation  and  responsibility  to  report  any  academic
+misconduct to the Dean of Students Office. Any student found in violation of the code by
+cheating,   plagiarizing   or   using   any   online   software   inappropriately   will   result   in
+disciplinary action. This may include a failing grade of F, and/or suspension or dismissal
+from the university. If you have any questions about the code of Academic Integrity, please
+contact the Dean of Students Office at [redacted email]”
+
+Recommended other books (not required)
+
+   INTRODUCTORY DATABASE TEXTBOOKS
+
+   •   Jeffrey D. Ullman, Jennifer Widom:
+   A First Course in Database Systems, 3rd Edition
+   Prentice Hall, © 2008.
+
+   •   Michael Kifer, Arthur Bernstein and Philip Lewis:
+   Database Systems: An Application-Oriented Approach, Introductory Version, 2nd Edition
+   Addison-Wesley, © 2006.
+
+   GENERAL DATABASE TEXTBOOKS
+
+   •   Raghu Ramakrishnan, Johannes Gehrke:
+   Database Management Systems, 3rd Edition
+   WCB/McGraw-Hill, © 2003.
+
+   •   Michael Kifer, Arthur Bernstein and Philip Lewis:
+   Database Systems: An Application-Oriented Approach, Complete Version, 2nd Edition
+   Addison-Wesley, © 2006.
+
+   •   Abraham Silberschatz, Henry F. Korth, S. Sudarshan:
+   Database System Concepts, 6th Edition
+   McGraw-Hill , 2010.
+
+   •   C. J. Date:
+   An Introduction to Database Systems, 8th Edition
+   Addison-Wesley, © 2004.
+
+   DATABASE THEORY
+
+   •   Serge Abiteboul, Richard Hull, Victor Vianu:
+   Foundations of Databases: The Logical Level.
+   Addison-Wesley, 1995.
+
+--- page 7 ---
+DBMS IMPLEMENTATION
+
+   •   Hector Garcia-Molina, Jeffrey D. Ullman, Jennifer Widom:
+   Database Systems, The Complete Book 2nd Edition.
+   Prentice-Hall, © 2009.
+
+   SQL
+   •   A lot of resources online.
+
+Links
+   ACM SIGMOD
+   IEEE TCDE
+   The VLDB Endowment
+   The EDBT Endowment
+   DBLP - Database and Logic Programming Bibliography
+
+   Interactive Online SQL Training
+   Advanced Online SQL Training
