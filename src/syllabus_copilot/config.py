@@ -9,7 +9,7 @@ load_dotenv()
 
 @dataclass(frozen=True)
 class Settings:
-    llm_model: str = os.getenv("LLM_MODEL", "gemini/gemini-2.5-flash")
+    llm_model: str = os.getenv("LLM_MODEL", "gemini/gemini-3.8-flash")
     database_url: str = os.getenv(
         "DATABASE_URL", "postgresql://copilot:copilot@localhost:5432/copilot"
     )

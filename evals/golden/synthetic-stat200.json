@@ -1,0 +1,17 @@
+{
+  "year": 2026,
+  "expected": {
+    "course_code": "STAT 200",
+    "course_name": "Introduction to Statistical Inference",
+    "deliverables": [
+      {"title": "Quiz 1", "type": "quiz", "due_date": "2026-09-25", "weight": 5},
+      {"title": "Quiz 2", "type": "quiz", "due_date": "2026-10-16", "weight": 5},
+      {"title": "Quiz 3", "type": "quiz", "due_date": "2026-11-13", "weight": 5},
+      {"title": "Project Proposal", "type": "project", "due_date": "2026-09-30", "weight": 5},
+      {"title": "Project Final Report", "type": "project", "due_date": "2026-12-04", "weight": 20},
+      {"title": "Project Presentation", "type": "project", "due_date": null, "weight": 5},
+      {"title": "Midterm Exam", "type": "exam", "due_date": "2026-10-28", "weight": 25},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 25}
+    ]
+  }
+}

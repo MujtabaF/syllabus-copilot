@@ -18,6 +18,7 @@ cp .env.example .env          # add a free Gemini key from https://aistudio.goog
 docker compose up -d          # Postgres + pgvector (used from week 3)
 
 syllabus-copilot extract path/to/syllabus.pdf --year 2026
+syllabus-copilot eval --model gemini/gemini-3.8-flash --model groq/openai/gpt-oss-120b
 ```
 
 Example output:
@@ -40,8 +41,9 @@ src/syllabus_copilot/
   pdf.py       PDF → text
   llm.py       Provider-agnostic LLM calls (LiteLLM)
   extract.py   Syllabus text → structured deliverables
+  evals.py     Scores extraction against the golden dataset
   cli.py       Command-line entry point
-evals/         Hand-labeled golden dataset and eval harness
+evals/         Hand-labeled golden dataset and results (see evals/README.md)
 tests/         Unit tests (no network / API keys needed)
 ```
 

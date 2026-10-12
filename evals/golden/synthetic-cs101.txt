@@ -1,0 +1,22 @@
+--- page 1 ---
+CS 101: Introduction to Programming
+Fall 2026, Section D100
+Instructor: Dr. A. Rivera   Office hours: Tuesdays 2-4pm
+
+Course description
+An introduction to programming in Python: variables, control flow, functions, lists,
+dictionaries, files, and basic testing. No prior experience is assumed.
+
+--- page 2 ---
+Grading
+
+Component                         Weight     Due
+Assignments (4, equally weighted)  20%       Sep 18, Oct 9, Oct 30, Nov 20
+Weekly labs (5, equally weighted)  10%       during your lab section
+Midterm exam                       25%       October 21, in class
+Final exam                         35%       TBA (scheduled by the registrar)
+Participation                      10%       ongoing
+
+Assignments are due at 11:59pm on the listed date. Late assignments lose 10% per day.
+Labs are marked for completion in your registered lab section.
+Practice exercises are posted weekly; they are optional and not graded.

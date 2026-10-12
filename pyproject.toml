@@ -9,6 +9,7 @@ dependencies = [
     "pydantic>=2.7",
     "pypdf>=5.0",
     "python-dotenv>=1.0",
+    "tenacity>=8.0",  # LiteLLM needs it for num_retries
 ]
 
 [project.optional-dependencies]
