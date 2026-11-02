@@ -1,0 +1,177 @@
+--- page 1 ---
+New Jersey Institute of Technology New Jersey Institute of Technology
+Digital Commons @ NJIT Digital Commons @ NJIT
+
+Computer Science Syllabi   NJIT Syllabi
+
+Fall 2025
+
+CS 301-001: Introduction to Data Science CS 301-001: Introduction to Data Science
+
+Yajuan Li
+
+Follow this and additional works at: https://digitalcommons.njit.edu/cs-syllabi
+
+Recommended Citation Recommended Citation
+Li, Yajuan, "CS 301-001: Introduction to Data Science" (2025). Computer Science Syllabi. 621.
+https://digitalcommons.njit.edu/cs-syllabi/621
+
+This Syllabus is brought to you for free and open access by the NJIT Syllabi at Digital Commons @ NJIT. It has
+been accepted for inclusion in Computer Science Syllabi by an authorized administrator of Digital Commons @
+NJIT. For more information, please contact [redacted email].
+
+--- page 2 ---
+Course Syllabus - Fall 2025
+   CS 301: Introduction to Data Science
+
+General Information
+Instructor: Dr. Yajuan Li
+Email: [redacted email]
+Office: GITC 4309
+Office Hours: Tuesday 3:30~5:30 pm (Zoom) or by appointment
+
+Course Overview
+This course is an introductory data science course designed for CS BS students to equip them
+with introductory principles as well as hands-on skills that are required to solve data science
+problems. The course will focus on learning models, formalism, and algorithmic techniques that
+are popular in data science and heavily used in practice. Students are also introduced to data
+science tools (e.g., Excel, Python). Extra attention will be paid to strengthen the theoretical as
+well as development/programming skills in performing data analyses using real-world small and
+large-scale datasets.
+
+The primary objectives of the course are:
+   •   Establishing a quantitative view and mastering scientific approaches for analyzing
+   large-scale datasets.
+   •   Understand core data science algorithms and their practical applications.
+   •   Gain implementation skills for applying data science algorithms to real-world
+   problems.
+   •   Learn to analyze, evaluate, and visualize results using appropriate metrics and
+   techniques.
+   •   Acquire proficiency in using popular data science tools and platforms.
+
+The outcomes of the course are:
+   •   An ability to understand and apply the data science process.
+   •   An ability to use data science tools and programming libraries for data analysis and
+   modeling.
+   •   An ability to build and evaluate basic machine learning models for classification,
+   regression, and clustering tasks.
+   •   An ability to apply data mining techniques and understand big data challenges.
+   •   An ability to implement and assess data science solutions for real-world applications
+   using appropriate methods.
+   •   An ability to visualize and interpret large datasets using appropriate techniques.
+
+Prerequisite: CS 1   14 and   (MATH 333   or MATH 341   ) with a grade of C or better.
+
+Textbooks (optional):
+   •   Introduction to Data Science: A Python Approach to Concepts, Techniques and
+   Applications by Laura Igual, et. Al.
+   •   Data Mining: Practical Machine Learning Tools and Techniques Frank & Witten
+
+--- page 3 ---
+•   Applied Statistics for Engineers and Scientists (3E 14) Devore & Farnum
+
+Tentative Course Topics (Subject to changes according to progress)
+   •   Introduction to Data Science
+   •   Data Science Tools and Ecosystem
+   •   Data Collection, Engineering, and Preprocessing
+   •   Exploratory Data Analysis and Visualization
+   •   Machine Learning Algorithms
+   •   Data Mining Techniques
+   •   Big Data Concepts and Technologies
+   •   Real-World Applications of Data Science
+
+Attendance
+You are supposed to attend all the classes. Participation is highly encouraged to make the class
+more interactive. In general, students who attend class regularly perform much better than those
+who come only occasionally. If you miss one class, be sure to consult one of your classmates
+about the content of the lecture and use Canvas to get notes, exercises, assignments, deadlines,
+and announcements. During class, kindly ensure that mobile phones are powered off.
+Additionally, it is expected that during class hours, activities such as gaming, texting, emailing,
+web browsing, or any other unrelated activities are refrained from, and the focus remains on the
+class content.
+
+Late Policies
+(1) Assignments and quizzes must be submitted through Canvas by the specified due date unless
+otherwise specified in class. We don’t accept late submissions.
+(2) Students can get an extended deadline only if they have special/emergency reasons verified
+by the Dean of Students. https://www.njit.edu/dos/student-excusals
+
+There will be NO EXCEPTION to these late policies. Please manage your time appropriately.
+
+Exam Policies
+Exams are in-person, and a Student ID (or equivalent official photo identification) is required.
+Respondus LockDown Browser and Monitor will be used to monitor and proctor exams.
+Students are responsible for installing and testing the software before the exam.
+https://download.respondus.com/lockdown/download.php?id=264548414
+More information is available at:https://web.respondus.com/student-help/
+
+Late submissions and makeup exams are not allowed. Students who have special circumstances
+or emergencies must seek formal approval in advance from:
+   ●   The Office of Accessibility Resources and Services for testing accommodations:
+   https://www.njit.edu/accessibility/requesting-testing-accommodations
+   ●   Or be verified by the Dean of Students: https://www.njit.edu/dos/student-excusals
+
+All approved rescheduled exams must be completed within one month of the original exam
+date. No extensions will be granted beyond this deadline. If a student misses the rescheduled
+exam, the grade for that exam will be recorded as zero. No further rescheduling will be allowed.
+
+--- page 4 ---
+Grade Dispute Policy
+Once a grade is posted, students have 48 hours to email the TA if they believe there is an error
+or have concerns about the grading. After this window, the grade is considered final and will not
+be revisited. Please note that any re-evaluation may result in a higher or lower grade, depending
+on the outcome of the review. Grading criteria are applied consistently to all students and are
+not subject to negotiation.
+TA contact information can be found on Canvas → People → TA.
+
+Grading Breakdown
+Quiz 10%, Midterm Project – 30%, Final Project 25%, Final Exam – 35%.
+
+Grading Scale
+Grade   A   B+   B   C+   C   D   F
+Overall Course Score   ≥90   [85, 90)   [80,   85)  [75,   80)   [70,   75)   [60,   70)   <60
+*Final grades are based on the above tentative grading scale. I reserve the right to change the
+scale as the need arises.
+
+Collaboration and Honor Code
+Each student is responsible for his/her own work. Students   may discuss problems together but
+must write up their own solutions. When writing up the solutions, students should write the
+names of people, if any, with whom they discussed the assignment. Note that copying
+homework or programming assignments, in full or in part is forbidden. Students found cheating
+or plagiarizing will be immediately referred to the Dean of Students and the NJIT Committee on
+Professional Conduct and subject to Disciplinary Probation, a permanent marking on the record,
+possible dismissal, and an “F” grade in the course. All submitted assignments will be checked
+for similarities, and plagiarism and guilty students identified. In the exam, each student is
+required to sign the Honor Code Agreement "On my honor, I pledge that I have not violated the
+provision of the NJIT Student Honor Code."
+
+University Policy on Academic Integrity
+“Academic Integrity is the cornerstone of higher education and is central to the ideals of this
+course and the university. Cheating is strictly prohibited and devalues the degree that you are
+working on. As a member of the NJIT community, it is your responsibility to protect your
+educational investment by knowing and following the academic code of integrity policy that is
+found at:   http://www5.njit.edu/policies/sites/policies/files/academic-integrity-code.pdf.
+
+Please note that it is my professional obligation and responsibility to report any academic
+misconduct to the Dean of Students Office.   Any student found in violation of the code by
+cheating, plagiarizing or using any online software inappropriately will result in disciplinary
+action. This may include a failing grade of F, and/or suspension or dismissal from the
+university. If   you have any questions about the code of Academic Integrity, please contact the
+Dean of Students Office at   [redacted email]”
+
+Generative AI
+Generative AI tools, such as ChatGPT, are permitted in this course only if explicitly authorized
+by the instructor for a specific assignment. The student is fully responsible for the integrity and
+
+--- page 5 ---
+accuracy of all submitted work. If permitted Generative AI tools produce incorrect results that
+are incorporated into the submission, the student will be graded based on the accuracy of the
+submitted work. Errors made by AI tools are solely the responsibility of the student.
+
+Student Absences for Religious Observance
+NJIT is committed to supporting students observing religious holidays. Students must notify
+their instructors in writing of any conflicts between course requirements and religious
+observances, ideally by the end of the second week of classes and no later than two weeks
+before the anticipated absence.
+
+*Students will be notified in class of any changes to the syllabus.

@@ -1,0 +1,527 @@
+--- syllabus ---
+Course Meeting Times
+
+Lectures: 2 sessions / week, 80 minutes / session
+
+Studios: 1 session / week, 50 minutes / session
+
+Prerequisites
+
+18.02 Multivariable Calculus
+
+Course Description
+
+This course provides an elementary introduction to probability and statistics with applications. Topics include basic combinatorics, random variables, probability distributions, Bayesian inference, hypothesis testing, confidence intervals, and linear regression.
+
+Broad Course Goals
+
+Learn the language and core concepts of probability theory.
+
+Understand basic principles of statistical inference (both Bayesian and frequentist).
+
+Build a starter statistical toolbox with appreciation for both the utility and limitations of these techniques.
+
+Use software and simulation to do statistics (R).
+
+Become an informed consumer of statistical information.
+
+Prepare for further coursework or on-the-job study.
+
+Course Arc
+
+Probability (uncertain world, perfect knowledge of the uncertainty)
+
+Counting
+
+Random variables, distributions, quantiles, mean variance
+
+Conditional probability, Bayes’ theorem, base rate fallacy
+
+Joint distributions, covariance, correlation, independence
+
+Central limit theorem
+
+Statistics I: pure applied probability (data in an uncertain world, perfect knowledge of the uncertainty)
+
+Bayesian inference with known priors, probability intervals
+
+Conjugate priors
+
+Statistics II: applied probability (data in an uncertain world, imperfect knowledge of the uncertainty)
+
+Bayesian inference with unknown priors
+
+Frequentist significance tests and confidence intervals
+
+Resampling methods: bootstrapping
+
+Linear regression
+
+Computation, simulation, and visualization using R and applets will be used throughout the course.
+
+Specific Learning Objectives
+
+Probability
+
+Students completing the course will
+
+be able to use basic counting techniques (multiplication rule, combinations, permutations) to compute probability and odds;
+
+be able to use R to run basic simulations of probabilistic scenarios;
+
+be able to compute conditional probabilities directly and using Bayes’ theorem, and check for independence of events;
+
+be able to set up and work with discrete random variables; in particular, to understand the Bernoulli, binomial, geometric, and Poisson distributions;
+
+be able to work with continuous random variables. In particular, know the properties of uniform, normal, and exponential distributions;
+
+know what expectation and variance mean and be able to compute them;
+
+understand the law of large numbers and the central limit theorem;
+
+be able to compute the covariance and correlation between jointly distributed variables; and
+
+be able to use available resources (the internet or books) to learn about and use other distributions as they arise.
+
+Statistics
+
+Students completing the course will
+
+be able to create and interpret scatter plots and histograms;
+
+understand the difference between probability and likelihood functions and be able to find the maximum likelihood estimate for a model parameter;
+
+be able to do Bayesian updating with discrete priors to compute posterior distributions and posterior odds;
+
+be able to do Bayesian updating with continuous priors;
+
+be able to construct estimates and predictions using the posterior distribution;
+
+be able to find credible intervals for parameter estimates;
+
+be able to use null hypothesis significance testing (NHST) to test the significance of results and to understand and be able to compute the p-value for these tests
+
+be able to use specific significance tests, including z-test, t-test (one- and two-sample), and chi-squared test;
+
+be able to find confidence intervals for parameter estimates;
+
+be able to use bootstrapping to estimate confidence intervals;
+
+be able to compute and interpret simple linear regression between two variables; and
+
+be able to set up a least squares fit of data to a model.
+
+Basic Structure of the Course
+
+We will take an active learning approach similar in some respects to Technology Enabled Active Learning (TEAL).
+
+You must do the reading and answer reading questions before each class.
+
+In class we will assume you have done the reading. We will lecture and work problems assuming this.
+
+We do not expect that you will have mastered the material on first reading. The goal is to start the process, so class will be more productive.
+
+The reading questions will prepare you for the harder questions we will work during class and on the problem sets.
+
+The reading questions will count toward your grade.
+
+We meet three times a week.
+
+Tuesday and Thursday will be a blend of lecture, concept questions and group problem solving.
+
+Friday will be a “studio” day. It will involve longer problems and the use of R. You will need to have your computer available on Fridays.
+
+We will use “clicker questions” in class.
+
+Participation on these questions will also count toward your grade.
+
+R
+
+We will make frequent use of R for computation, simulation, and visualization.
+
+We will teach you everything you need to know to use R as a tool in this class.
+
+You will not be expected to do any hardcore computer programming.
+
+Note to OCW Users
+
+The interactive components of this course – the Online Reading Questions and Problem Checkers – are available on MIT’s Open Learning Library, which is free to use. You have the option to sign up and track your progress, or you can view and use the materials without enrolling.
+
+Textbook
+
+There will be no assigned textbook for the class. will be assigned.
+
+Problem Sets and Exams
+
+Problem sets
+
+Problem sets will be due most weeks, usually on Monday.
+
+Problem sets will have a problem checker on the Open Learning Library (OLL). This will allow you to check many of your answers before turning in the problem sets. 
+
+Exams
+
+There will be two in-class midterm exams and a comprehensive final exam.
+
+The midterms will be designed to take one hour, but you will have the entire 80 minutes of class to finish.
+
+We will have one R-based quiz. For this quiz, you will be allowed to use the internet in any way except to communicate with other people.
+
+Groups
+
+For in-class problem solving you will work in groups of 3.
+
+You will be able to choose your own group.
+
+After a week or so, groups will be more or less permanent.
+
+Groups should sit together at tables.
+
+Collaboration
+
+MIT has a culture of teamwork. We encourage you to work with study partners.
+
+Collaboration on homework is encouraged.
+
+You must write your solutions yourself, in your own words.
+
+You must list all collaborators and outside sources of information.
+
+Grading
+
+Reading questions and in-class clicker questions will each count for 5% of your grade.
+
+Problem sets will count for 25% of your grade. In computing your problem set average we will drop your lowest score.
+
+The R studios will count 5% of your grade.
+
+The midterm exams and R quiz combined will count for 30% of your grade (12.5%, 12.5%, 5%).
+
+The final exam will count for 30% of your grade.
+
+Course Info
+
+Instructors
+
+Dr. Jeremy Orloff
+
+Dr. Jennifer French Kamrin
+
+Departments
+
+Mathematics
+
+As Taught In
+
+Spring
+
+2022
+
+Level
+
+Undergraduate
+
+Topics
+
+Mathematics
+
+Discrete Mathematics
+
+Probability and Statistics
+
+Learning Resource Types
+
+assignment_turned_in
+Activity Assignments with Examples
+
+grading
+Exam Solutions
+
+grading
+Exams
+
+co_present
+
+Instructor Insights
+
+notes
+Lecture Notes
+
+assignment_turned_in
+Problem Set Solutions
+
+assignment
+Problem Sets
+
+auto_stories
+Readings
+
+grading
+Supplemental Exam Materials
+
+Download Course
+
+Over 2,500 courses & materials
+
+Freely sharing knowledge with learners and educators around the world. Learn more
+
+© 2001–2026 Massachusetts Institute of Technology
+
+Accessibility
+
+Creative Commons License
+
+Terms and Conditions
+
+Proud member of:
+
+© 2001–2026 Massachusetts Institute of Technology
+
+You are leaving MIT OpenCourseWare
+
+close
+
+Please be advised that external sites may have terms and conditions,
+including license rights, that differ from ours. MIT OCW is not responsible
+for any content on third party sites, nor does a link suggest an endorsement
+of those sites and/or their content.
+
+Stay Here
+
+Continue
+
+--- calendar ---
+Students are required to attend class sessions and studio sessions, the latter of which take place on Friday. Typically, studio sessions are used to introduce longer problems and the use of R.
+
+Week 1
+
+Unit 1: Probability
+
+Class 1: Counting
+
+Class 2: Probability Basics
+
+Studio 1: Birthday Matches
+
+Week 2
+
+Key Date: Problem set 1 due
+
+Class 3: Conditional Probability, Independence, and Bayes’ Theorem
+
+Class 4: Discrete Random Variables: Expected Value
+
+Studio 2: Binomial Distributions; Derangements
+
+Week 3
+
+Key Date: Problem set 2 due
+
+Class 5a: Variance of Discrete Variables; Continuous Random Variables
+
+Class 5b: Continuous Random Variables (continued)
+
+Studio 3: Histograms
+
+Week 4
+
+Key Date: Problem set 3 due
+
+Class 6a: Continuous Random Variables: Expected Value and Variance; Histograms
+
+Class 6b: Law of Large Numbers, Central Limit Theorem, Histograms
+
+Week 5
+
+Key Date: Problem set 4 due
+
+Class 7: Joint Distributions: Independence, Covariance, and Correlation
+
+Class 8: Review for Exam 1 
+
+Studio 4: Covariance and Correlation
+
+Week 6
+
+Key Date: Problem set 5 due
+
+Class 9: Exam 1 
+
+Unit 2 Statistics: Bayesian Inference
+
+Class 10: Introduction to Statistics, Examples, Likelihood, MLE
+
+Week 7
+
+Key Date: Problem set 6 due
+
+Class 11: Bayesian Updating: Discrete Priors
+
+Class 12: Predictive Probabilities, Bayesian Updating: Odds
+
+Studio 5: Discrete Bayesian Updating
+
+Week 8
+
+Class 13: Bayesian Updating: Continuous Prior, Discrete Data
+
+Class 14: Continuous Data with Continuous Priors (Optional)
+
+Class 15: Beta Distributions, Conjugate Priors; Choosing Priors
+
+Studio 6: Discretized Continuous Bayesian Updating
+
+Week 9
+
+Key Date: Problem set 7 due
+
+Class 16: Choosing Priors; Probability Intervals
+
+Unit 3 Statistics: Frequentist Inference: NHST
+
+Class 17: NHST: Rejection Regions, z-Test
+
+Studio 7: Significance Testing and the Probability of Hypotheses
+
+Week 10
+
+Key Date: Problem set 8 due
+
+Class 18: NHST (continued) (t-Tests)
+
+Class 19: NHST: Distributions Related to Normal Distributions (Chi Square, ANOVA)
+
+Studio 8: Simulation and Computation of NHST
+
+Week 11
+
+Key Date: Problem set 9 due
+
+Class 20: Comparison of Bayes and NHST
+
+Unit 4 Statistics: Confidence Intervals; Regression
+
+Class 22: Confidence Intervals
+
+Studio 9: Simulating Confidence Intervals
+
+Week 12 
+
+Class 21: Review for Exam 2
+
+Exam 2 
+
+Studio 10: Bootstrap Confidence Intervals
+
+Week 13
+
+Key Date: Problem set 10 due
+
+Class 23: Confidence Intervals (continued)
+
+Class 24: Bootstrap Confidence Intervals
+
+Class 25: R Quiz
+
+Week 14
+
+Key Date: Problem set 11 due
+
+Class 26: Linear and Multiple Regression
+
+Class 27: Review for Final Exam
+
+Week 15
+
+Final Exam
+
+Course Info
+
+Instructors
+
+Dr. Jeremy Orloff
+
+Dr. Jennifer French Kamrin
+
+Departments
+
+Mathematics
+
+As Taught In
+
+Spring
+
+2022
+
+Level
+
+Undergraduate
+
+Topics
+
+Mathematics
+
+Discrete Mathematics
+
+Probability and Statistics
+
+Learning Resource Types
+
+assignment_turned_in
+Activity Assignments with Examples
+
+grading
+Exam Solutions
+
+grading
+Exams
+
+co_present
+
+Instructor Insights
+
+notes
+Lecture Notes
+
+assignment_turned_in
+Problem Set Solutions
+
+assignment
+Problem Sets
+
+auto_stories
+Readings
+
+grading
+Supplemental Exam Materials
+
+Download Course
+
+Over 2,500 courses & materials
+
+Freely sharing knowledge with learners and educators around the world. Learn more
+
+© 2001–2026 Massachusetts Institute of Technology
+
+Accessibility
+
+Creative Commons License
+
+Terms and Conditions
+
+Proud member of:
+
+© 2001–2026 Massachusetts Institute of Technology
+
+You are leaving MIT OpenCourseWare
+
+close
+
+Please be advised that external sites may have terms and conditions,
+including license rights, that differ from ours. MIT OCW is not responsible
+for any content on third party sites, nor does a link suggest an endorsement
+of those sites and/or their content.
+
+Stay Here
+
+Continue

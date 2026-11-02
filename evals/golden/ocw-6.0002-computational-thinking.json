@@ -1,0 +1,17 @@
+{
+  "labeled_by": "claude-draft",
+  "year": 2016,
+  "expected": {
+    "course_code": "6.0002",
+    "course_name": "Introduction to Computational Thinking and Data Science",
+    "deliverables": [
+      {"title": "Problem Set 1", "type": "assignment", "due_date": null, "weight": 10.0},
+      {"title": "Problem Set 2", "type": "assignment", "due_date": null, "weight": 10.0},
+      {"title": "Problem Set 3", "type": "assignment", "due_date": null, "weight": 10.0},
+      {"title": "Problem Set 4", "type": "assignment", "due_date": null, "weight": 10.0},
+      {"title": "Problem Set 5", "type": "assignment", "due_date": null, "weight": 10.0},
+      {"title": "Finger Exercises", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 40}
+    ]
+  }
+}

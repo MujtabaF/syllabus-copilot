@@ -1,0 +1,218 @@
+--- page 1 ---
+New Jersey Institute of Technology New Jersey Institute of Technology
+Digital Commons @ NJIT Digital Commons @ NJIT
+
+Computer Science Syllabi   NJIT Syllabi
+
+Fall 2025
+
+CS 113-001: Introduction to Computer Science I CS 113-001: Introduction to Computer Science I
+
+Junilda Spirollari
+
+Follow this and additional works at: https://digitalcommons.njit.edu/cs-syllabi
+
+Recommended Citation Recommended Citation
+Spirollari, Junilda, "CS 113-001: Introduction to Computer Science I" (2025). Computer Science Syllabi.
+611.
+https://digitalcommons.njit.edu/cs-syllabi/611
+
+This Syllabus is brought to you for free and open access by the NJIT Syllabi at Digital Commons @ NJIT. It has
+been accepted for inclusion in Computer Science Syllabi by an authorized administrator of Digital Commons @
+NJIT. For more information, please contact [redacted email].
+
+--- page 2 ---
+CS 113 - Introduction to Computer Science I
+   Course Syllabus, Fall 2025
+
+Instructor: Junilda Spirollari
+Office: GITC 4405
+Email: [redacted email]
+Office Hours: MW, 10:00am – 11:20am
+
+Overview
+This course is a comprehensive introduction to the Java programming language, writing and testing of
+programs. The course consists of three major parts. The first part teaches fundamental programming techniques
+that use primitive data types, variables, assignments expressions, operators and control statements. The second
+introduces object-oriented programming, methods, parameter passing, recursion and arrays. The third part
+delves deeper into object-oriented programming by exploring inheritance, interfaces, polymorphism, abstract
+classes and finally discussing exception handling.
+Learning this material requires extensive hands-on practice. You should plan to spend twice as much time
+studying and working on problems outside of class, as you do in class.
+
+Textbook
+Java Software Solutions, 9th edition – John Lewis & William Loftus, ISBN-13: 9780134462028, Pearson.
+(One could use an older version; however, it is his/her responsibility to make sure homework problems
+coincide with the ones assigned.)
+
+Prerequisites
+CS100 – Roadmap to Computing or equivalent
+
+Course Policies
+-   Attendance is mandatory. A student who misses more than five classes will be dropped, without credit.
+   Getting to class late or leaving early counts as half an absence.
+
+-   Canvas (https://canvas.njit.edu/) will be the platform for posting lecture notes, submitting assignments
+   and engaging in course discussions. For any questions and additional support, you are welcome to reach
+   out to instructors and classroom assistants via email.
+
+-   Lab work must be completed during the lab session and submitted on the due date/time. EXCEPT for
+   special circumstances (such as missing class due to a medical problem), for which you must be excused
+   by the Dean of Students, you MUST BE present in class to receive credit for the assigned work. No
+   make-up lab assignments will be provided.
+
+-   Online quizzes will be given weekly at the beginning 15 minutes of every lecture class.  The student
+   must be on time to complete the quiz. Late arrivals may not allow for enough time to complete the quiz.
+   No make-up quizzes will be provided.
+
+-   Class participation is a regular part of class meetings. Students will be expected to present their
+   homework/classwork in class. Asking/answering questions as well as participating in group discussions
+
+--- page 3 ---
+are also part of class participation.
+
+-   Homework must be submitted on Canvas on the due date/time. All submitted work (including exams)
+   must include your name and student ID. EXCEPT for special circumstances (such as jury duty or
+   medical problem), for which you must provide documentation through the Dean of Students, the
+   following LATE SUBMISSION PENALTY will be applied:
+   Up to 1 DAY LATE:   -20 pts
+   Up to 2 DAYS LATE: -40 pts
+   NO SUBMISSIONS WILL BE ACCEPTED after 2 DAYS following the homework Due Date.
+   The lowest scored homework will be dropped from the final grade calculation.
+
+   It is imperative that you adhere to the university’s academic integrity policies. Cheating, plagiarism,
+   and any other form of academic dishonesty will not be tolerated. To avoid misconduct student’s work:
+   ●   must be individual. Students may not copy code from external sources without permission of the
+   instructor or course assistant (e.g. online sources, other students’ code, previous semester
+   coursework, etc.).
+   ●   may not include concepts, methods or code in the homework that have not been introduced or
+   taught in the class up until the submission date. This	includes	avoiding	code	suggested	or
+   automatically	inserted	by	an	IDE	if	it	has	not	been	taught	in	class.
+   ●   may not contain code that they cannot understand or explain if asked.
+
+   A 2-step Grading Rubric will be used when grading the homework assignments and misconducts will
+   be reported to the Dean of Students. Filing a report with the Dean of Students can result in severe
+   consequences, including an XF on the student’s record. Additionally, any filed report, regardless of the
+   investigation’s outcome, may be considered in future cases by the Dean of Students.
+
+-   Recitation hours will be provided weekly and conducted by the course assistants. Attending recitation
+   is an important checkpoint in assuring your grasp of the material being covered and correctly solving
+   assigned problems. Before attending recitation, you should have already read the assigned material and
+   made progress on your current homework. During recitation, you should come prepared to ask any
+   questions you have identified that require clarification. This will help confirm whether your
+   understanding of the material is correct. You may also meet with the instructor for your section. All
+   instructors have posted office hours.
+
+-   Cell phones must be turned off during class. During class time you may not play games, text, email,
+   browse the web or engage in other activities that are not part of the class.
+
+-   Tutoring hours are also provided by our college. You can find more information on the tutoring
+   page:  Tutoring | Ying Wu College of Computing (njit.edu). Additionally, a class Discord channel will
+   be created during the first week to enhance active learning through online discussions.
+
+--- page 4 ---
+Material covered
+   ●   Introduction to programming and Java programming language
+   ●   Data and Expressions
+   ●   Using Classes and Methods
+   ●   Decisions and Loops
+   ●   Arrays and File I/O
+   ●   Objects-Oriented Programming
+   a.  Object-Oriented Design
+   b.  Defining Classes and creating Objects
+   c.  Defining methods
+   d.  Inheritance
+   e.  Polymorphism
+   ●   Recursion
+   ●   Exceptions
+   ●   Searching and Sorting Algorithms
+   ●   Collections
+
+Learning Outcomes
+Upon completing the course, the students will be expected to know and be able to use these elements to
+compute the solution to a problem:
+   ●   Understand the concept of classes and objects
+   ●   Design and implement own classes
+   ●   Create and correctly use objects of different types
+   ●   Devise a sequence of steps (algorithm) that correctly solves a given problem.
+   ●   Write a program that implements the algorithm using:
+   o   A main set of java programming language elements (variables, syntax, keywords)
+   o   Data types (primitive and object data types including arrays)
+   o   Statements that perform input/output, control statements
+   o   Exception handling
+   ●   Understand inheritance and polymorphism and correctly use to solve complex problems
+   ●   Understand recursion and implement recursive methods
+
+Evaluation
+The evaluation will be based on the following course requirements:
+
+   Midterm 1   18%
+   Midterm 2   20%
+   Final Exam   30%
+   Homework   12%
+   Labs   12%
+   Lecture Quizzes   6%
+   Discretionary   2%
+
+Letter Grade Formula
+
+   Grade   A   B+   B   C+   C   D
+   Overall Course Score Cutoff   85   80   74   68   60   50
+
+--- page 5 ---
+Exam Policies
+There are two common midterms: October 13th, 4:00pm – 5:30pm  and November 10th, 4:00pm – 5:30pm. The
+final exams period is December 14th – December 20th . The CS113 final exam will be during this period, but the
+date has not yet been set. All exams will take place in person, on Canvas, and will require Lockdown Browser.
+Be sure that you will be present for all of your exams as there are no make-up exams.
+
+You must bring a photo ID to all exams. Students with special needs are advised to make arrangements
+with the Office of Accessibility Resources and Services.
+
+There are no make-up exams. If you miss a midterm because of a documented special circumstance
+determined by the Dean of Students you may receive an imputed grade based on the other midterm and the
+final exam.
+
+Grade Appeals
+If you believe that you deserve more credit than you have been awarded on a particular common exam
+problem, you may request, at the time the exam is returned, that it be regraded. Your entire exam will be
+regraded, which may result in points being added or subtracted.
+
+If you believe that you deserve more credit than you have been awarded on a particular homework
+problem, you may request, within 48 hours of the grade being posted, that it be regraded. Your entire
+homework will be regraded, which may result in points being added or subtracted.
+
+University Code on Academic Integrity
+
+Academic Integrity is the cornerstone of higher education and is central to the ideals of this course and
+the university. Cheating is strictly prohibited and devalues the degree that you are working on. As a
+member of the NJIT community, it is your responsibility to protect your educational investment by
+knowing and following the academic code of integrity policy that is found at: NJIT Academic Integrity
+Code.
+
+Please note that it is my professional obligation and responsibility to report any academic misconduct to
+the Dean of Students Office. Any student found in violation of the code by cheating, plagiarizing or using
+any online software inappropriately will result in disciplinary action. This may include a failing grade of
+F, and/or suspension or dismissal from the university. If you have any questions about the code of
+Academic Integrity, please contact the Dean of Students Office at [redacted email]
+
+--- page 6 ---
+Tentative Agenda
+   Lecture 1   TENTATIVE AGENDA   CHAPTER
+   Introduction to programming and Java programming
+   1   language   Ch. 1
+   2   Data and Expressions, Using Classes &Objects   Ch. 2, 3
+   3   Using Classes &Objects, Writing Classes   Ch. 3, 4
+   4   Writing Classes   Ch. 4
+   5   Conditionals + Loops   Ch. 5
+   6   Review for Mid1 + Loops   Ch. 6
+
+   7   Object Oriented Design, Interfaces   Ch. 7
+   8   Arrays   Ch. 8
+   9   Recursion   Ch. 12
+   10   Recursion + Review for Mid2
+
+   11   Inheritance   Ch. 9
+   12   Polymorphism, Sorting and Searching Algorithms   Ch. 10
+   13   Exception Handling   Ch. 11
+   14   Collections - Review (Final)   Ch.13

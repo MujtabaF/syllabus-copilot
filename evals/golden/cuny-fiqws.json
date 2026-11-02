@@ -1,0 +1,16 @@
+{
+  "labeled_by": "claude-draft",
+  "year": 2023,
+  "expected": {
+    "course_code": "FIQWS 10105",
+    "course_name": "Killer Stories (Writing)",
+    "deliverables": [
+      {"title": "Narrative Essay", "type": "assignment", "due_date": "2023-09-21", "weight": 20},
+      {"title": "Exploratory Essay", "type": "assignment", "due_date": "2023-10-26", "weight": 20},
+      {"title": "Critical Research Analysis", "type": "assignment", "due_date": "2023-11-30", "weight": 20},
+      {"title": "Portfolio and Self-Assessment", "type": "assignment", "due_date": "2023-12-12", "weight": 20},
+      {"title": "Discussion Boards, In-Class Work, Homework and Quizzes", "type": "other", "due_date": null, "weight": 10},
+      {"title": "Participation", "type": "other", "due_date": null, "weight": 10}
+    ]
+  }
+}

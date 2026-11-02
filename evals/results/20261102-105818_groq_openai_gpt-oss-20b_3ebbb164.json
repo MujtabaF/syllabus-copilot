@@ -1,0 +1,334 @@
+{
+  "summary": {
+    "model": "groq/openai/gpt-oss-20b",
+    "prompt_version": "3ebbb164",
+    "examples": 14,
+    "errors": 0,
+    "precision": 0.7177914110429447,
+    "recall": 0.8863636363636364,
+    "f1": 0.7932203389830509,
+    "date_accuracy": 0.9658119658119658,
+    "weight_accuracy": 0.9230769230769231,
+    "type_accuracy": 0.9914529914529915,
+    "mean_latency_s": 3.1435873932877425,
+    "cost_usd": 0.008142825
+  },
+  "examples": [
+    {
+      "id": "cuny-edf101",
+      "counts": {
+        "predicted": 14,
+        "expected": 9,
+        "matched": 9,
+        "date_correct": 9,
+        "weight_correct": 2,
+        "type_correct": 9
+      },
+      "latency_s": 2.7772980840018135,
+      "error": null,
+      "missed": [],
+      "extra": [
+        "Extra Credit - College Resources",
+        "Extra Credit - My Campus Event Reflection on a Co-Curricular Event of Your Choosing",
+        "Extra Credit - Attendance in ALL Studio Hours",
+        "Extra Credit - Attendance in ALL Lecture Hours",
+        "Extra Credit - Submission of all required assignments in this course on or before the due date"
+      ],
+      "wrong_fields": [
+        "ePortfolio: Course Reflection: weight 6.428571428571429, expected 5.0",
+        "ePortfolio: My Campus Event 2: Careers in Education: weight 6.428571428571429, expected 10.0",
+        "ePortfolio: My Campus Event 1: Transfer Planning: weight 6.428571428571429, expected 10.0",
+        "ePortfolio: NYS Teacher Education Certification: weight 6.428571428571429, expected 5.0",
+        "ePortfolio: My Curriculum/Program of Study/Degree Planning: weight 6.428571428571429, expected 5.0",
+        "ePortfolio: Time Management: weight 6.428571428571429, expected 5.0",
+        "ePortfolio: About Me: weight 6.428571428571429, expected 5.0"
+      ]
+    },
+    {
+      "id": "cuny-fiqws",
+      "counts": {
+        "predicted": 5,
+        "expected": 6,
+        "matched": 4,
+        "date_correct": 0,
+        "weight_correct": 4,
+        "type_correct": 3
+      },
+      "latency_s": 1.808466501004581,
+      "error": null,
+      "missed": [
+        "Discussion Boards, In-Class Work, Homework and Quizzes",
+        "Participation"
+      ],
+      "extra": [
+        "Quiz"
+      ],
+      "wrong_fields": [
+        "Portfolio and Self-Assessment: date None, expected 2023-12-12",
+        "Portfolio and Self-Assessment: type project, expected assignment",
+        "Exploratory Essay: date None, expected 2023-10-26",
+        "Narrative Essay: date None, expected 2023-09-21",
+        "Critical Research Analysis: date None, expected 2023-11-30"
+      ]
+    },
+    {
+      "id": "cuny-hist104",
+      "counts": {
+        "predicted": 4,
+        "expected": 5,
+        "matched": 4,
+        "date_correct": 4,
+        "weight_correct": 4,
+        "type_correct": 4
+      },
+      "latency_s": 1.862734166996379,
+      "error": null,
+      "missed": [
+        "Classroom Attendance and Participation"
+      ],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-ad111",
+      "counts": {
+        "predicted": 11,
+        "expected": 11,
+        "matched": 10,
+        "date_correct": 10,
+        "weight_correct": 9,
+        "type_correct": 10
+      },
+      "latency_s": 2.476262625005911,
+      "error": null,
+      "missed": [
+        "Assignment 9"
+      ],
+      "extra": [
+        "Design Process Folder"
+      ],
+      "wrong_fields": [
+        "Assignment 10: weight 20.0, expected 10.0"
+      ]
+    },
+    {
+      "id": "njit-cs100",
+      "counts": {
+        "predicted": 13,
+        "expected": 18,
+        "matched": 13,
+        "date_correct": 13,
+        "weight_correct": 13,
+        "type_correct": 13
+      },
+      "latency_s": 3.168249709003433,
+      "error": null,
+      "missed": [
+        "Homework 5",
+        "Online Participation",
+        "Final Exam",
+        "Roadmap Project",
+        "Discretionary"
+      ],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs113",
+      "counts": {
+        "predicted": 6,
+        "expected": 7,
+        "matched": 6,
+        "date_correct": 6,
+        "weight_correct": 6,
+        "type_correct": 6
+      },
+      "latency_s": 1.3362570010020818,
+      "error": null,
+      "missed": [
+        "Discretionary"
+      ],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs301",
+      "counts": {
+        "predicted": 4,
+        "expected": 4,
+        "matched": 4,
+        "date_correct": 4,
+        "weight_correct": 4,
+        "type_correct": 4
+      },
+      "latency_s": 1.5210687090019945,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs331",
+      "counts": {
+        "predicted": 10,
+        "expected": 10,
+        "matched": 10,
+        "date_correct": 10,
+        "weight_correct": 10,
+        "type_correct": 10
+      },
+      "latency_s": 2.384451334000623,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs375",
+      "counts": {
+        "predicted": 21,
+        "expected": 10,
+        "matched": 9,
+        "date_correct": 9,
+        "weight_correct": 9,
+        "type_correct": 9
+      },
+      "latency_s": 2.710056542001258,
+      "error": null,
+      "missed": [
+        "Quizzes"
+      ],
+      "extra": [
+        "Quiz 1",
+        "Quiz 2",
+        "Quiz 3",
+        "Quiz 4",
+        "Quiz 5",
+        "Quiz 6",
+        "Quiz 7",
+        "Quiz 8",
+        "Quiz 9",
+        "Quiz 10",
+        "Quiz 11",
+        "Quiz 12"
+      ],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-14.01-microeconomics",
+      "counts": {
+        "predicted": 10,
+        "expected": 10,
+        "matched": 10,
+        "date_correct": 10,
+        "weight_correct": 9,
+        "type_correct": 10
+      },
+      "latency_s": 1.7903067920025215,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": [
+        "Problem Set 8: weight 0.0, expected 3.12"
+      ]
+    },
+    {
+      "id": "ocw-14.54-international-trade",
+      "counts": {
+        "predicted": 8,
+        "expected": 8,
+        "matched": 8,
+        "date_correct": 8,
+        "weight_correct": 8,
+        "type_correct": 8
+      },
+      "latency_s": 1.510802833002236,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-18.05-probability-statistics",
+      "counts": {
+        "predicted": 15,
+        "expected": 18,
+        "matched": 15,
+        "date_correct": 15,
+        "weight_correct": 15,
+        "type_correct": 15
+      },
+      "latency_s": 14.24606533400393,
+      "error": null,
+      "missed": [
+        "Reading Questions",
+        "Clicker Questions",
+        "R Studios"
+      ],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-18.404j-theory-of-computation",
+      "counts": {
+        "predicted": 35,
+        "expected": 9,
+        "matched": 8,
+        "date_correct": 8,
+        "weight_correct": 8,
+        "type_correct": 8
+      },
+      "latency_s": 2.979295833002542,
+      "error": null,
+      "missed": [
+        "Quizzes"
+      ],
+      "extra": [
+        "Quiz 1",
+        "Quiz 2",
+        "Quiz 3",
+        "Quiz 4",
+        "Quiz 5",
+        "Quiz 6",
+        "Quiz 7",
+        "Quiz 8",
+        "Quiz 9",
+        "Quiz 10",
+        "Quiz 11",
+        "Quiz 12",
+        "Quiz 13",
+        "Quiz 14",
+        "Quiz 15",
+        "Quiz 16",
+        "Quiz 17",
+        "Quiz 18",
+        "Quiz 19",
+        "Quiz 20",
+        "Quiz 21",
+        "Quiz 22",
+        "Quiz 23",
+        "Quiz 24",
+        "Quiz 25",
+        "Quiz 26",
+        "Quiz 27"
+      ],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-6.0002-computational-thinking",
+      "counts": {
+        "predicted": 7,
+        "expected": 7,
+        "matched": 7,
+        "date_correct": 7,
+        "weight_correct": 7,
+        "type_correct": 7
+      },
+      "latency_s": 3.438908041999092,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    }
+  ]
+}

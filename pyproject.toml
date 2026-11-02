@@ -5,20 +5,32 @@ description = "An AI agent that turns course syllabi into personalized study sch
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "google-api-python-client>=2.100",
+    "google-auth-oauthlib>=1.2",
     "litellm>=1.50",
+    "mcp>=2,<3",
+    "numpy>=2.0",
+    "pgvector>=0.3",
+    "psycopg[binary]>=3.1",
     "pydantic>=2.7",
     "pypdf>=5.0",
     "python-dotenv>=1.0",
+    "tenacity>=8.0",  # LiteLLM needs it for num_retries
 ]
 
 [project.optional-dependencies]
+# Local embeddings pull in PyTorch, so tests and CI use a small stand-in instead.
+embeddings = ["sentence-transformers>=3.0"]
 dev = [
     "pytest>=8.0",
+    "pytest-asyncio>=0.24",
     "ruff>=0.6",
 ]
 
 [project.scripts]
 syllabus-copilot = "syllabus_copilot.cli:main"
+course-docs-mcp = "syllabus_copilot.servers.course_docs:main"
+calendar-mcp = "syllabus_copilot.servers.google_calendar:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -36,3 +48,4 @@ select = ["E", "F", "I", "UP", "B"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+asyncio_mode = "auto"

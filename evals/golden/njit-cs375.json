@@ -1,0 +1,20 @@
+{
+  "labeled_by": "claude-draft",
+  "year": 2025,
+  "expected": {
+    "course_code": "CS 375",
+    "course_name": "Introduction to Machine Learning",
+    "deliverables": [
+      {"title": "Hands-On Assignment 1", "type": "assignment", "due_date": null, "weight": 4.17},
+      {"title": "Hands-On Assignment 2", "type": "assignment", "due_date": null, "weight": 4.17},
+      {"title": "Hands-On Assignment 3", "type": "assignment", "due_date": null, "weight": 4.17},
+      {"title": "Hands-On Assignment 4", "type": "assignment", "due_date": null, "weight": 4.17},
+      {"title": "Hands-On Assignment 5", "type": "assignment", "due_date": null, "weight": 4.17},
+      {"title": "Hands-On Assignment 6", "type": "assignment", "due_date": null, "weight": 4.17},
+      {"title": "Quizzes", "type": "quiz", "due_date": null, "weight": 15},
+      {"title": "Midterm Exam", "type": "exam", "due_date": null, "weight": 25},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 25},
+      {"title": "Project", "type": "project", "due_date": null, "weight": 10}
+    ]
+  }
+}

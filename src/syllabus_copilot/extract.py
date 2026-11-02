@@ -10,12 +10,19 @@ Return only JSON matching this schema:
 {schema}
 
 Rules:
-- Include every graded item: assignments, quizzes, exams, projects, and graded labs.
+- Include every item that counts toward the final grade: assignments, quizzes, exams, projects,
+  graded labs, and ongoing marks such as participation or attendance (type "other").
+- Leave out ungraded work and extra credit.
 - due_date must be YYYY-MM-DD. If the syllabus omits the year, assume {year}.
-  If no date is given, use null.
+  Use null if no exact date is given, including "TBA", a date range, or only a week or
+  class number. If an item has a draft and a final version, use the final version's date.
 - weight is the percent of the final grade as a number (25% -> 25). Use null if not stated.
-- If one weight covers a group (e.g. "4 assignments, 20% total"), list each item
-  and split the weight evenly.
+  If grades are in points, convert them to percent of the total points.
+- If one weight covers a group with a known number of items (e.g. "4 assignments, 20% total"),
+  list each item and split the weight evenly. Do the same for "best 7 of 8": list all 8.
+- If the number of items isn't stated (e.g. "weekly quizzes, 15%"), or one line combines
+  different activities, use a single entry with the whole weight.
+- Keep titles short, with no description: "Assignment 1", "Midterm Exam".
 - Never invent items that are not in the text."""
 
 CompleteFn = Callable[[str, str], str]

@@ -1,0 +1,21 @@
+{
+  "year": 2026,
+  "expected": {
+    "course_code": "CS 101",
+    "course_name": "Introduction to Programming",
+    "deliverables": [
+      {"title": "Assignment 1", "type": "assignment", "due_date": "2026-09-18", "weight": 5},
+      {"title": "Assignment 2", "type": "assignment", "due_date": "2026-10-09", "weight": 5},
+      {"title": "Assignment 3", "type": "assignment", "due_date": "2026-10-30", "weight": 5},
+      {"title": "Assignment 4", "type": "assignment", "due_date": "2026-11-20", "weight": 5},
+      {"title": "Lab 1", "type": "lab", "due_date": null, "weight": 2},
+      {"title": "Lab 2", "type": "lab", "due_date": null, "weight": 2},
+      {"title": "Lab 3", "type": "lab", "due_date": null, "weight": 2},
+      {"title": "Lab 4", "type": "lab", "due_date": null, "weight": 2},
+      {"title": "Lab 5", "type": "lab", "due_date": null, "weight": 2},
+      {"title": "Midterm Exam", "type": "exam", "due_date": "2026-10-21", "weight": 25},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 35},
+      {"title": "Participation", "type": "other", "due_date": null, "weight": 10}
+    ]
+  }
+}

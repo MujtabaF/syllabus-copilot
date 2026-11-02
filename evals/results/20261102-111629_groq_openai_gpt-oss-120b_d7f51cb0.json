@@ -1,0 +1,288 @@
+{
+  "summary": {
+    "model": "groq/openai/gpt-oss-120b",
+    "prompt_version": "d7f51cb0",
+    "examples": 14,
+    "errors": 0,
+    "precision": 0.9206349206349206,
+    "recall": 0.8787878787878788,
+    "f1": 0.8992248062015504,
+    "date_accuracy": 0.9655172413793104,
+    "weight_accuracy": 0.9913793103448276,
+    "type_accuracy": 0.9913793103448276,
+    "mean_latency_s": 2.5936690568562613,
+    "cost_usd": 0.01317465
+  },
+  "examples": [
+    {
+      "id": "cuny-edf101",
+      "counts": {
+        "predicted": 9,
+        "expected": 9,
+        "matched": 9,
+        "date_correct": 9,
+        "weight_correct": 9,
+        "type_correct": 9
+      },
+      "latency_s": 3.7190790830063634,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "cuny-fiqws",
+      "counts": {
+        "predicted": 6,
+        "expected": 6,
+        "matched": 5,
+        "date_correct": 1,
+        "weight_correct": 5,
+        "type_correct": 5
+      },
+      "latency_s": 2.74736841699486,
+      "error": null,
+      "missed": [
+        "Participation"
+      ],
+      "extra": [
+        "Participation (peer-reviews, class discussions, attendance)"
+      ],
+      "wrong_fields": [
+        "Portfolio and Self-Assessment: date None, expected 2023-12-12",
+        "Exploratory Essay: date None, expected 2023-10-26",
+        "Narrative Essay: date None, expected 2023-09-21",
+        "Critical Research Analysis: date None, expected 2023-11-30"
+      ]
+    },
+    {
+      "id": "cuny-hist104",
+      "counts": {
+        "predicted": 5,
+        "expected": 5,
+        "matched": 4,
+        "date_correct": 4,
+        "weight_correct": 4,
+        "type_correct": 4
+      },
+      "latency_s": 2.2463511679979185,
+      "error": null,
+      "missed": [
+        "Classroom Attendance and Participation"
+      ],
+      "extra": [
+        "Participation"
+      ],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-ad111",
+      "counts": {
+        "predicted": 10,
+        "expected": 11,
+        "matched": 10,
+        "date_correct": 10,
+        "weight_correct": 9,
+        "type_correct": 10
+      },
+      "latency_s": 2.776499040998168,
+      "error": null,
+      "missed": [
+        "Assignment 9"
+      ],
+      "extra": [],
+      "wrong_fields": [
+        "Assignment 10: weight 20.0, expected 10.0"
+      ]
+    },
+    {
+      "id": "njit-cs100",
+      "counts": {
+        "predicted": 17,
+        "expected": 18,
+        "matched": 17,
+        "date_correct": 17,
+        "weight_correct": 17,
+        "type_correct": 17
+      },
+      "latency_s": 2.882893832999102,
+      "error": null,
+      "missed": [
+        "Homework 12"
+      ],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs113",
+      "counts": {
+        "predicted": 7,
+        "expected": 7,
+        "matched": 7,
+        "date_correct": 7,
+        "weight_correct": 7,
+        "type_correct": 7
+      },
+      "latency_s": 1.9404118339967695,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs301",
+      "counts": {
+        "predicted": 4,
+        "expected": 4,
+        "matched": 4,
+        "date_correct": 4,
+        "weight_correct": 4,
+        "type_correct": 4
+      },
+      "latency_s": 2.1249626249997533,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs331",
+      "counts": {
+        "predicted": 11,
+        "expected": 10,
+        "matched": 10,
+        "date_correct": 10,
+        "weight_correct": 10,
+        "type_correct": 10
+      },
+      "latency_s": 2.0755567929975136,
+      "error": null,
+      "missed": [],
+      "extra": [
+        "Attendance/Participation"
+      ],
+      "wrong_fields": []
+    },
+    {
+      "id": "njit-cs375",
+      "counts": {
+        "predicted": 5,
+        "expected": 10,
+        "matched": 4,
+        "date_correct": 4,
+        "weight_correct": 4,
+        "type_correct": 4
+      },
+      "latency_s": 1.8895137090008944,
+      "error": null,
+      "missed": [
+        "Hands-On Assignment 1",
+        "Hands-On Assignment 2",
+        "Hands-On Assignment 3",
+        "Hands-On Assignment 4",
+        "Hands-On Assignment 5",
+        "Hands-On Assignment 6"
+      ],
+      "extra": [
+        "Assignments"
+      ],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-14.01-microeconomics",
+      "counts": {
+        "predicted": 10,
+        "expected": 10,
+        "matched": 10,
+        "date_correct": 10,
+        "weight_correct": 10,
+        "type_correct": 10
+      },
+      "latency_s": 2.6769774580033854,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-14.54-international-trade",
+      "counts": {
+        "predicted": 8,
+        "expected": 8,
+        "matched": 8,
+        "date_correct": 8,
+        "weight_correct": 8,
+        "type_correct": 8
+      },
+      "latency_s": 2.432155417000466,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-18.05-probability-statistics",
+      "counts": {
+        "predicted": 18,
+        "expected": 18,
+        "matched": 18,
+        "date_correct": 18,
+        "weight_correct": 18,
+        "type_correct": 18
+      },
+      "latency_s": 2.6227486669982234,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-18.404j-theory-of-computation",
+      "counts": {
+        "predicted": 9,
+        "expected": 9,
+        "matched": 3,
+        "date_correct": 3,
+        "weight_correct": 3,
+        "type_correct": 3
+      },
+      "latency_s": 4.073487625997505,
+      "error": null,
+      "missed": [
+        "Homework 1",
+        "Homework 2",
+        "Homework 3",
+        "Homework 4",
+        "Homework 5",
+        "Homework 6"
+      ],
+      "extra": [
+        "Assignment 1",
+        "Assignment 2",
+        "Assignment 3",
+        "Assignment 4",
+        "Assignment 5",
+        "Assignment 6"
+      ],
+      "wrong_fields": []
+    },
+    {
+      "id": "ocw-6.0002-computational-thinking",
+      "counts": {
+        "predicted": 7,
+        "expected": 7,
+        "matched": 7,
+        "date_correct": 7,
+        "weight_correct": 7,
+        "type_correct": 6
+      },
+      "latency_s": 2.103361124996738,
+      "error": null,
+      "missed": [],
+      "extra": [],
+      "wrong_fields": [
+        "Finger Exercises: type other, expected assignment"
+      ]
+    }
+  ]
+}

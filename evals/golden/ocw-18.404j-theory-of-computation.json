@@ -1,0 +1,19 @@
+{
+  "labeled_by": "claude-draft",
+  "year": 2020,
+  "expected": {
+    "course_code": "18.404J",
+    "course_name": "Theory of Computation",
+    "deliverables": [
+      {"title": "Homework 1", "type": "assignment", "due_date": null, "weight": 5.83},
+      {"title": "Homework 2", "type": "assignment", "due_date": null, "weight": 5.83},
+      {"title": "Homework 3", "type": "assignment", "due_date": null, "weight": 5.83},
+      {"title": "Homework 4", "type": "assignment", "due_date": null, "weight": 5.83},
+      {"title": "Homework 5", "type": "assignment", "due_date": null, "weight": 5.83},
+      {"title": "Homework 6", "type": "assignment", "due_date": null, "weight": 5.83},
+      {"title": "Quizzes", "type": "quiz", "due_date": null, "weight": 25},
+      {"title": "Midterm Exam", "type": "exam", "due_date": null, "weight": 15},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 25}
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+--- page 1 ---
+STAT 200 - Introduction to Statistical Inference (Fall 2026)
+
+Welcome! This course covers sampling distributions, confidence intervals, hypothesis
+tests, and simple linear regression, with weekly computing work in R.
+
+How you will be assessed
+
+There are three in-class quizzes, each worth 5% of your grade. They will be held on
+September 25, October 16 and November 13.
+
+The term project is done in groups of three. Your group submits a two-page proposal
+(5%) by September 30 and a final written report (20%) by December 4. Each group also
+gives a short in-class presentation (5%) during the last week of classes; presentation
+slots will be assigned later.
+
+The midterm exam (25%) is on Wednesday, October 28. The cumulative final exam is worth
+25% and will be held during the exam period; the date will be announced by the
+registrar.
+
+--- page 2 ---
+Problem sets are posted every Friday. They are for practice only and are not handed in
+or graded, but the quizzes draw heavily from them.
+
+Missed quizzes cannot be made up; with documentation, the weight moves to the final exam.

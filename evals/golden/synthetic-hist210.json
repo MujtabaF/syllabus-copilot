@@ -1,0 +1,15 @@
+{
+  "year": 2026,
+  "expected": {
+    "course_code": "HIST 210",
+    "course_name": "Modern Europe, 1789-1945",
+    "deliverables": [
+      {"title": "Response Paper 1", "type": "assignment", "due_date": "2026-09-18", "weight": 10},
+      {"title": "Response Paper 2", "type": "assignment", "due_date": "2026-10-09", "weight": 10},
+      {"title": "Response Paper 3", "type": "assignment", "due_date": "2026-11-06", "weight": 10},
+      {"title": "Midterm Exam", "type": "exam", "due_date": "2026-10-22", "weight": 20},
+      {"title": "Research Essay", "type": "assignment", "due_date": "2026-11-27", "weight": 30},
+      {"title": "Final Project Showcase", "type": "project", "due_date": "2026-12-03", "weight": 20}
+    ]
+  }
+}

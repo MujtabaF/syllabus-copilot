@@ -1,0 +1,17 @@
+{
+  "labeled_by": "claude-draft",
+  "year": 2025,
+  "expected": {
+    "course_code": "CS 113",
+    "course_name": "Introduction to Computer Science I",
+    "deliverables": [
+      {"title": "Midterm 1", "type": "exam", "due_date": "2025-10-13", "weight": 18},
+      {"title": "Midterm 2", "type": "exam", "due_date": "2025-11-10", "weight": 20},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 30},
+      {"title": "Homework", "type": "assignment", "due_date": null, "weight": 12},
+      {"title": "Labs", "type": "lab", "due_date": null, "weight": 12},
+      {"title": "Lecture Quizzes", "type": "quiz", "due_date": null, "weight": 6},
+      {"title": "Discretionary", "type": "other", "due_date": null, "weight": 2}
+    ]
+  }
+}
