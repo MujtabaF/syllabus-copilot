@@ -11,7 +11,7 @@ load_dotenv()
 class Settings:
     llm_model: str = os.getenv("LLM_MODEL", "gemini/gemini-3.8-flash")
     database_url: str = os.getenv(
-        "DATABASE_URL", "postgresql://copilot:copilot@localhost:5432/copilot"
+        "DATABASE_URL", "postgresql://copilot:copilot@localhost:5433/copilot"
     )
 
 
