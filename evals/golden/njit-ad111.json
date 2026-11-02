@@ -1,9 +1,21 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2025,
   "expected": {
     "course_code": "AD 111",
     "course_name": "Communication in Art + Design: Traditional Media",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Exercise One", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "Assignment 1", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "Assignment 2", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "Assignment 3", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "Assignment 4", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "Assignment 5", "type": "assignment", "due_date": null, "weight": 15},
+      {"title": "Assignment 6", "type": "assignment", "due_date": null, "weight": 15},
+      {"title": "Assignment 7", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "Assignment 8", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "Assignment 9", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "Assignment 10", "type": "assignment", "due_date": null, "weight": 10}
+    ]
   }
 }

@@ -26,6 +26,7 @@ def main() -> None:
     )
     evaluate.add_argument("--golden", type=Path, default=Path("evals/golden"))
     evaluate.add_argument("--out", type=Path, default=Path("evals/results"))
+    evaluate.add_argument("--real-only", action="store_true", help="Leave out synthetic syllabi")
 
     args = parser.parse_args()
 
@@ -33,14 +34,16 @@ def main() -> None:
         syllabus = extract_syllabus(pdf_to_text(args.pdf), year=args.year)
         print(syllabus.model_dump_json(indent=2))
     elif args.command == "eval":
-        run_evals(args.models or [settings.llm_model], args.golden, args.out)
+        run_evals(args.models or [settings.llm_model], args.golden, args.out, args.real_only)
 
 
-def run_evals(models: list[str], golden: Path, out: Path) -> None:
-    examples = load_golden(golden)
+def run_evals(models: list[str], golden: Path, out: Path, real_only: bool = False) -> None:
+    examples = load_golden(golden, real_only=real_only)
     print(f"{len(examples)} golden syllabi, prompt version {PROMPT_VERSION}")
     if todo := unlabeled(golden):
         print(f"Skipping {len(todo)} not labeled yet: {', '.join(todo)}")
+    if drafts := [ex.id for ex in examples if ex.labeled_by != "human"]:
+        print(f"{len(drafts)} labels are AI drafts, not yet checked by a person")
     print()
     out.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -51,7 +54,7 @@ def run_evals(models: list[str], golden: Path, out: Path) -> None:
 
         def report(r):
             status = f"ERROR {r.error}" if r.error else "ok"
-            print(f"  {r.id}: {r.counts.matched}/{r.counts.expected} found, {status}")
+            print(f"  {r.id}: {r.counts.matched}/{r.counts.expected} found, {status}", flush=True)
 
         result = run_eval(examples, model, on_example=report)
         summaries.append(result.summary())

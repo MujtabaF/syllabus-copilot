@@ -1,9 +1,20 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2025,
   "expected": {
     "course_code": "CS 331",
     "course_name": "Database System Design and Management",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Midterm", "type": "exam", "due_date": null, "weight": 25},
+      {"title": "Project Deliverable 1", "type": "project", "due_date": null, "weight": 10.0},
+      {"title": "Project Deliverable 2", "type": "project", "due_date": null, "weight": 10.0},
+      {"title": "Project Deliverable 3", "type": "project", "due_date": null, "weight": 10.0},
+      {"title": "Assignment 1", "type": "assignment", "due_date": null, "weight": 2.0},
+      {"title": "Assignment 2", "type": "assignment", "due_date": null, "weight": 2.0},
+      {"title": "Assignment 3", "type": "assignment", "due_date": null, "weight": 2.0},
+      {"title": "Assignment 4", "type": "assignment", "due_date": null, "weight": 2.0},
+      {"title": "Assignment 5", "type": "assignment", "due_date": null, "weight": 2.0},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 35}
+    ]
   }
 }

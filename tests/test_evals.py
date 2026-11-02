@@ -5,6 +5,7 @@ from pathlib import Path
 import pytest
 
 from syllabus_copilot.evals import (
+    differences,
     load_golden,
     match_deliverables,
     run_eval,
@@ -24,6 +25,18 @@ def item(title, type="assignment", due=None, weight=None):
 def test_numbered_titles_never_match_different_numbers():
     assert title_similarity("Assignment 1", "Assignment 2") == 0.0
     assert title_similarity("Assignment 1", "assignment #1") > 0.9
+
+
+def test_equivalent_spellings_match():
+    assert title_similarity("HW01", "Homework 1") == 1.0
+    assert title_similarity("Exam I", "Exam 1") == 1.0
+    assert title_similarity("Pset 3", "Problem Set 3") == 1.0
+    assert title_similarity("HW01", "Homework 2") == 0.0
+
+
+def test_title_with_a_description_still_matches():
+    assert title_similarity("Deliverable 3", "Deliverable 3: Report and demo") > 0.9
+    assert title_similarity("Exam", "Exam review session") < 0.6  # one word isn't enough
 
 
 def test_matches_reworded_titles_one_to_one():
@@ -59,8 +72,24 @@ def test_score_counts_misses_extras_and_field_errors():
     assert m["precision"] == pytest.approx(2 / 3)
     assert m["recall"] == pytest.approx(2 / 3)
     assert m["date_accuracy"] == pytest.approx(1 / 2)
+    assert m["dated_item_accuracy"] == pytest.approx(1 / 2)
     assert m["weight_accuracy"] == 1.0  # 25.3 is within tolerance
     assert m["type_accuracy"] == 1.0
+
+
+def test_differences_name_what_went_wrong():
+    expected = Syllabus(
+        deliverables=[item("Quiz 1", "quiz", date(2026, 9, 25), 5), item("Midterm Exam", "exam")]
+    )
+    predicted = Syllabus(
+        deliverables=[item("Quiz 1", "quiz", date(2026, 9, 26), 5), item("Reading Log")]
+    )
+
+    missed, extra, wrong = differences(predicted, expected)
+
+    assert missed == ["Midterm Exam"]
+    assert extra == ["Reading Log"]
+    assert wrong == ["Quiz 1: date 2026-09-26, expected 2026-09-25"]
 
 
 def test_golden_labels_are_valid():
@@ -85,6 +114,11 @@ def test_todo_labels_are_skipped(tmp_path):
 
     assert [ex.id for ex in load_golden(tmp_path)] == ["done"]
     assert unlabeled(tmp_path) == ["pending"]
+
+
+def test_real_only_leaves_out_synthetic_syllabi():
+    ids = [ex.id for ex in load_golden(GOLDEN_DIR, real_only=True)]
+    assert ids and not any(i.startswith("synthetic-") for i in ids)
 
 
 def test_perfect_model_scores_100_percent():

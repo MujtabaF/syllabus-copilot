@@ -50,7 +50,7 @@ tests/         Unit tests (no network / API keys needed)
 ## Roadmap
 
 - [x] **Week 1:** PDF → structured deadlines extraction
-- [ ] **Week 2:** Eval harness + golden dataset, baseline scores across models
+- [x] **Week 2:** Eval harness + golden dataset, baseline scores across models
 - [ ] **Week 3:** `course-docs` MCP server with RAG search (pgvector)
 - [ ] **Week 4:** `calendar` MCP server (Google Calendar OAuth, free/busy)
 - [ ] **Week 5:** Agent loop with human-in-the-loop confirmation

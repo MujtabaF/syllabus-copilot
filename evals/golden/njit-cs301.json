@@ -1,9 +1,14 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2025,
   "expected": {
     "course_code": "CS 301",
     "course_name": "Introduction to Data Science",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Quizzes", "type": "quiz", "due_date": null, "weight": 10},
+      {"title": "Midterm Project", "type": "project", "due_date": null, "weight": 30},
+      {"title": "Final Project", "type": "project", "due_date": null, "weight": 25},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 35}
+    ]
   }
 }

@@ -1,9 +1,20 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2023,
   "expected": {
     "course_code": "14.01",
     "course_name": "Principles of Microeconomics",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Problem Set 1", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 2", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 3", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 4", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 5", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 6", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 7", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Problem Set 8", "type": "assignment", "due_date": null, "weight": 3.12},
+      {"title": "Midterm Exam", "type": "exam", "due_date": null, "weight": 25},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 50}
+    ]
   }
 }

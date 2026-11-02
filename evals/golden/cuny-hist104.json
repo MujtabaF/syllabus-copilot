@@ -1,9 +1,15 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2025,
   "expected": {
     "course_code": "History 104",
     "course_name": "American History, 1865-Present",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Exam 1", "type": "exam", "due_date": "2025-10-06", "weight": 20},
+      {"title": "Exam 2", "type": "exam", "due_date": "2025-12-08", "weight": 20},
+      {"title": "Profiles in Excellence", "type": "assignment", "due_date": "2025-11-10", "weight": 20},
+      {"title": "Final Exam", "type": "exam", "due_date": "2025-12-22", "weight": 30},
+      {"title": "Classroom Attendance and Participation", "type": "other", "due_date": null, "weight": 10}
+    ]
   }
 }

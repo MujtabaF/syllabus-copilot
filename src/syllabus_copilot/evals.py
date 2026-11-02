@@ -34,17 +34,18 @@ WEIGHT_TOLERANCE = 0.5
 
 class GoldenExample(BaseModel):
     id: str
+    labeled_by: str = "human"
     year: int
     text: str
     expected: Syllabus
 
 
-def load_golden(directory: Path) -> list[GoldenExample]:
+def load_golden(directory: Path, real_only: bool = False) -> list[GoldenExample]:
     """Load every labeled example. Label files marked `"todo": true` are skipped."""
     examples = []
     for label_path in sorted(directory.glob("*.json")):
         label = json.loads(label_path.read_text())
-        if label.get("todo"):
+        if label.get("todo") or (real_only and label_path.stem.startswith("synthetic-")):
             continue
         pdf_path = label_path.with_suffix(".pdf")
         if pdf_path.exists():
@@ -53,7 +54,11 @@ def load_golden(directory: Path) -> list[GoldenExample]:
             text = label_path.with_suffix(".txt").read_text()
         examples.append(
             GoldenExample(
-                id=label_path.stem, year=label["year"], text=text, expected=label["expected"]
+                id=label_path.stem,
+                labeled_by=label.get("labeled_by", "human"),
+                year=label["year"],
+                text=text,
+                expected=label["expected"],
             )
         )
     return examples
@@ -66,8 +71,15 @@ def unlabeled(directory: Path) -> list[str]:
     ]
 
 
+# Spellings that mean the same thing, applied word by word before titles are compared.
+_SYNONYMS = {"hw": "homework", "pset": "problem set", "i": "1", "ii": "2", "iii": "3", "iv": "4"}
+
+
 def _normalize(title: str) -> str:
-    return " ".join(re.sub(r"[^a-z0-9]", " ", title.lower()).split())
+    text = re.sub(r"[^a-z0-9]", " ", title.lower())
+    text = re.sub(r"(?<=[a-z])(?=\d)", " ", text)  # "hw01" -> "hw 01"
+    words = [_SYNONYMS.get(word, word) for word in text.split()]
+    return re.sub(r"\b0+(?=\d)", "", " ".join(words))  # "01" -> "1"
 
 
 def title_similarity(a: str, b: str) -> float:
@@ -76,9 +88,14 @@ def title_similarity(a: str, b: str) -> float:
     Titles with different numbers ("Assignment 1" vs "Assignment 2") never match, because
     plain string similarity would rate them as near-identical.
     """
+    a, b = _normalize(a), _normalize(b)
     if re.findall(r"\d+", a) != re.findall(r"\d+", b):
         return 0.0
-    return SequenceMatcher(None, _normalize(a), _normalize(b)).ratio()
+    # A title plus a description is the same item: "Project 3" and "Project 3: Final Report".
+    shorter, longer = sorted((a, b), key=len)
+    if len(shorter.split()) >= 2 and longer.startswith(f"{shorter} "):
+        return 0.95
+    return SequenceMatcher(None, a, b).ratio()
 
 
 def match_deliverables(
@@ -121,6 +138,8 @@ class Counts:
     date_correct: int = 0
     weight_correct: int = 0
     type_correct: int = 0
+    dated: int = 0  # matched items whose label has a real date
+    dated_correct: int = 0
 
     def __add__(self, other: "Counts") -> "Counts":
         return Counts(**{k: v + getattr(other, k) for k, v in asdict(self).items()})
@@ -137,6 +156,8 @@ class Counts:
             "recall": recall,
             "f1": f1,
             "date_accuracy": ratio(self.date_correct, self.matched),
+            # date_accuracy also counts "no date" correctly left empty; this one doesn't.
+            "dated_item_accuracy": ratio(self.dated_correct, self.dated),
             "weight_accuracy": ratio(self.weight_correct, self.matched),
             "type_accuracy": ratio(self.type_correct, self.matched),
         }
@@ -151,6 +172,28 @@ def score(predicted: Syllabus, expected: Syllabus) -> Counts:
         date_correct=sum(p.due_date == e.due_date for p, e in pairs),
         weight_correct=sum(_weight_correct(p.weight, e.weight) for p, e in pairs),
         type_correct=sum(p.type == e.type for p, e in pairs),
+        dated=sum(e.due_date is not None for _, e in pairs),
+        dated_correct=sum(e.due_date is not None and p.due_date == e.due_date for p, e in pairs),
+    )
+
+
+def differences(predicted: Syllabus, expected: Syllabus) -> tuple[list[str], list[str], list[str]]:
+    """What went wrong, for reading results: (missed, extra, wrong fields on matched items)."""
+    pairs = match_deliverables(predicted.deliverables, expected.deliverables)
+    matched_p = {id(p) for p, _ in pairs}
+    matched_e = {id(e) for _, e in pairs}
+    wrong = []
+    for p, e in pairs:
+        if p.due_date != e.due_date:
+            wrong.append(f"{e.title}: date {p.due_date}, expected {e.due_date}")
+        if not _weight_correct(p.weight, e.weight):
+            wrong.append(f"{e.title}: weight {p.weight}, expected {e.weight}")
+        if p.type != e.type:
+            wrong.append(f"{e.title}: type {p.type.value}, expected {e.type.value}")
+    return (
+        [e.title for e in expected.deliverables if id(e) not in matched_e],
+        [p.title for p in predicted.deliverables if id(p) not in matched_p],
+        wrong,
     )
 
 
@@ -160,6 +203,9 @@ class ExampleResult:
     counts: Counts
     latency_s: float
     error: str | None = None
+    missed: list[str] = field(default_factory=list)  # expected, but not found
+    extra: list[str] = field(default_factory=list)  # found, but not expected
+    wrong_fields: list[str] = field(default_factory=list)  # matched, with a wrong field
 
 
 @dataclass
@@ -201,25 +247,40 @@ def run_eval(
     swap in a fake LLM, as the tests do.
     """
     result = RunResult(model=model, prompt_version=PROMPT_VERSION)
+    waited = 0.0
 
     if complete is None:
         from .llm import chat_json
 
+        def wait(seconds: float) -> None:  # Rate-limit waits don't count as model latency.
+            nonlocal waited
+            waited += seconds
+            time.sleep(seconds)
+
         def complete(system: str, user: str) -> str:
-            response = chat_json(system, user, model=model)
+            response = chat_json(system, user, model=model, sleep=wait)
             result.cost_usd += _cost(response, model)
             return response.choices[0].message.content
 
     for example in examples:
+        waited = 0.0
         start = time.perf_counter()
         try:
             predicted = extract_syllabus(example.text, year=example.year, complete=complete)
             counts, error = score(predicted, example.expected), None
+            missed, extra, wrong = differences(predicted, example.expected)
         except Exception as exc:  # A failed extraction scores as zero items found.
             empty = Syllabus(deliverables=[])
             counts, error = score(empty, example.expected), f"{type(exc).__name__}: {exc}"
+            missed, extra, wrong = [e.title for e in example.expected.deliverables], [], []
         example_result = ExampleResult(
-            id=example.id, counts=counts, latency_s=time.perf_counter() - start, error=error
+            id=example.id,
+            counts=counts,
+            latency_s=time.perf_counter() - start - waited,
+            error=error,
+            missed=missed,
+            extra=extra,
+            wrong_fields=wrong,
         )
         result.examples.append(example_result)
         if on_example:
@@ -250,14 +311,15 @@ def _cost(response, model: str) -> float:
 def format_table(summaries: list[dict]) -> str:
     """Render run summaries as a Markdown table for the terminal or the README."""
     header = (
-        "| Model | Prompt | Precision | Recall | F1 | Date acc | Weight acc | Type acc "
-        "| Errors | Mean latency | Cost |"
+        "| Model | Prompt | Precision | Recall | F1 | Date acc | Real-date acc | Weight acc "
+        "| Type acc | Errors | Mean latency | Cost |"
     )
-    lines = [header, "|---" * 11 + "|"]
+    lines = [header, "|---" * 12 + "|"]
     for s in summaries:
         lines.append(
             f"| {s['model']} | {s['prompt_version']} | {s['precision']:.1%} | {s['recall']:.1%} "
-            f"| {s['f1']:.1%} | {s['date_accuracy']:.1%} | {s['weight_accuracy']:.1%} "
+            f"| {s['f1']:.1%} | {s['date_accuracy']:.1%} | {s['dated_item_accuracy']:.1%} "
+            f"| {s['weight_accuracy']:.1%} "
             f"| {s['type_accuracy']:.1%} | {s['errors']}/{s['examples']} "
             f"| {s['mean_latency_s']:.1f}s | ${s['cost_usd']:.4f} |"
         )

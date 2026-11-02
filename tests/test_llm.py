@@ -34,3 +34,22 @@ def test_gives_up_after_too_many_rate_limits(monkeypatch):
     with pytest.raises(litellm.RateLimitError):
         llm.chat_json("system", "user", model="m", sleep=waits.append)
     assert waits == [llm.DEFAULT_RATE_LIMIT_WAIT_S] * llm.RATE_LIMIT_RETRIES
+
+
+@pytest.mark.parametrize(
+    "message",
+    [
+        "Generate content requests per day limit exceeded on Free Tier.",
+        "Please retry in 14h26m9.89s.",
+    ],
+)
+def test_daily_quota_fails_right_away_instead_of_waiting(monkeypatch, message):
+    def daily_limit(**kwargs):
+        raise rate_limit(message)
+
+    monkeypatch.setattr(llm.litellm, "completion", daily_limit)
+    waits = []
+
+    with pytest.raises(litellm.RateLimitError):
+        llm.chat_json("system", "user", model="m", sleep=waits.append)
+    assert waits == []

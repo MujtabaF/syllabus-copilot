@@ -1,9 +1,19 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2025,
   "expected": {
     "course_code": "EDF 101",
     "course_name": "Education First Year Seminar",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Course Participation", "type": "other", "due_date": null, "weight": 35},
+      {"title": "Dream Deferred Integrative Digital Essay", "type": "assignment", "due_date": null, "weight": 20},
+      {"title": "ePortfolio: About Me", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "ePortfolio: Time Management", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "ePortfolio: My Curriculum/Program of Study/Degree Planning", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "ePortfolio: NYS Teacher Education Certification", "type": "assignment", "due_date": null, "weight": 5},
+      {"title": "ePortfolio: My Campus Event 1: Transfer Planning", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "ePortfolio: My Campus Event 2: Careers in Education", "type": "assignment", "due_date": null, "weight": 10},
+      {"title": "ePortfolio: Course Reflection", "type": "assignment", "due_date": null, "weight": 5}
+    ]
   }
 }

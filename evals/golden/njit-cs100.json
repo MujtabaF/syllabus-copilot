@@ -1,9 +1,28 @@
 {
-  "todo": true,
+  "labeled_by": "claude-draft",
   "year": 2025,
   "expected": {
     "course_code": "CS 100",
     "course_name": "Roadmap to Computing",
-    "deliverables": []
+    "deliverables": [
+      {"title": "Homework 1", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 2", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 3", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 4", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 5", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 6", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 7", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 8", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 9", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 10", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 11", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Homework 12", "type": "assignment", "due_date": null, "weight": 1.25},
+      {"title": "Online Participation", "type": "other", "due_date": null, "weight": 8},
+      {"title": "Midterm 1", "type": "exam", "due_date": "2025-10-13", "weight": 18},
+      {"title": "Midterm 2", "type": "exam", "due_date": "2025-11-10", "weight": 22},
+      {"title": "Final Exam", "type": "exam", "due_date": null, "weight": 25},
+      {"title": "Roadmap Project", "type": "project", "due_date": null, "weight": 10},
+      {"title": "Discretionary", "type": "other", "due_date": null, "weight": 2}
+    ]
   }
 }

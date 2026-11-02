@@ -13,9 +13,12 @@ RATE_LIMIT_RETRIES = 5
 DEFAULT_RATE_LIMIT_WAIT_S = 20.0
 
 
-def _suggested_wait(error: Exception) -> float:
-    """Seconds the provider asked us to wait ("try again in 15.01s"), plus a small margin."""
-    match = re.search(r"try again in ([\d.]+)s", str(error))
+def _suggested_wait(error: Exception) -> float | None:
+    """Seconds to wait before retrying, or None if a retry can't succeed any time soon."""
+    text = str(error)
+    if re.search(r"per day|retry in \d+h", text, re.IGNORECASE):
+        return None  # A daily quota: waiting hours in a retry loop would only look like a hang.
+    match = re.search(r"(?:try again|retry) in ([\d.]+)s", text, re.IGNORECASE)
     return float(match.group(1)) + 1 if match else DEFAULT_RATE_LIMIT_WAIT_S
 
 
@@ -42,9 +45,10 @@ def chat_json(
                 num_retries=3,
             )
         except litellm.RateLimitError as error:
-            if attempt == RATE_LIMIT_RETRIES:
+            wait = _suggested_wait(error)
+            if wait is None or attempt == RATE_LIMIT_RETRIES:
                 raise
-            sleep(_suggested_wait(error))
+            sleep(wait)
 
 
 def complete_json(system: str, user: str, model: str | None = None) -> str:
