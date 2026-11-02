@@ -28,6 +28,8 @@ def main() -> None:
     evaluate.add_argument("--out", type=Path, default=Path("evals/results"))
     evaluate.add_argument("--real-only", action="store_true", help="Leave out synthetic syllabi")
 
+    sub.add_parser("calendar-login", help="Sign in to Google Calendar in your browser")
+
     args = parser.parse_args()
 
     if args.command == "extract":
@@ -35,6 +37,13 @@ def main() -> None:
         print(syllabus.model_dump_json(indent=2))
     elif args.command == "eval":
         run_evals(args.models or [settings.llm_model], args.golden, args.out, args.real_only)
+    elif args.command == "calendar-login":
+        from .gcal import NotSignedIn, login
+
+        try:
+            print(f"Signed in. Token saved to {login()} (keep this file private).")
+        except NotSignedIn as error:
+            raise SystemExit(str(error)) from error
 
 
 def run_evals(models: list[str], golden: Path, out: Path, real_only: bool = False) -> None:

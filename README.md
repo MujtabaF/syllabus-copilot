@@ -35,11 +35,12 @@ Example output:
 
 ## MCP servers
 
-A server exposes the project's tools to any MCP client, such as Claude Desktop or Cursor.
+Two servers expose the project's tools to any MCP client, such as Claude Desktop or Cursor.
 
 | Server | Command | Tools |
 |---|---|---|
 | Course docs | `course-docs-mcp` | `docs_ingest_syllabus`, `docs_search`, `docs_list_courses` |
+| Calendar | `calendar-mcp` | `calendar_get_busy`, `calendar_find_free_slots`, `calendar_list_study_blocks`, `calendar_create_study_block`, `calendar_move_study_block` |
 
 Example client config (use the full path to your virtual environment):
 
@@ -52,6 +53,10 @@ Example client config (use the full path to your virtual environment):
         "COURSE_DOCS_DIR": "/path/to/your/syllabi",
         "DATABASE_URL": "postgresql://copilot:copilot@localhost:5433/copilot"
       }
+    },
+    "calendar": {
+      "command": "/path/to/syllabus-copilot/.venv/bin/calendar-mcp",
+      "env": { "GOOGLE_SECRETS_DIR": "/path/to/syllabus-copilot/.secrets" }
     }
   }
 }
@@ -60,6 +65,22 @@ Example client config (use the full path to your virtual environment):
 **Course docs.** Syllabi are split into chunks and embedded on your machine, so their text
 isn't sent anywhere. The first run downloads the embedding model (about 90 MB). The server
 only reads `.pdf` and `.txt` files inside `COURSE_DOCS_DIR`.
+
+**Calendar setup.**
+
+1. In the [Google Cloud console](https://console.cloud.google.com/), create a project and
+   enable the Google Calendar API.
+2. Configure the OAuth consent screen and add your own Google account as a test user.
+3. Create an OAuth client ID of type **Desktop app** and save its JSON file as
+   `.secrets/google_client.json`. `.secrets/` is ignored by git.
+4. Run `syllabus-copilot calendar-login` and approve access in your browser.
+
+**Calendar safety.**
+
+- The server sees only *when* you're busy, not what your events are.
+- It can only list or move study blocks it created, which carry a private marker.
+- Creating or moving a block returns a preview, including any conflicts, unless the call
+  passes `confirm=true`. A client should show that preview to you before confirming.
 
 ## Project layout
 
@@ -71,7 +92,8 @@ src/syllabus_copilot/
   extract.py   Syllabus text → structured deliverables
   evals.py     Scores extraction against the golden dataset
   docs.py      Syllabus chunks, local embeddings, and vector search
-  servers/     MCP servers: course_docs.py
+  gcal.py      Google sign-in, free/busy lookup, and study blocks
+  servers/     MCP servers: course_docs.py and google_calendar.py
   cli.py       Command-line entry point
 evals/         Hand-labeled golden dataset and results (see evals/README.md)
 tests/         Unit tests (no network / API keys needed)
@@ -82,7 +104,8 @@ tests/         Unit tests (no network / API keys needed)
 - [x] **Week 1:** PDF → structured deadlines extraction
 - [x] **Week 2:** Eval harness + golden dataset, baseline scores across models
 - [x] **Week 3:** `course-docs` MCP server with RAG search (pgvector)
-- [ ] **Week 4:** `calendar` MCP server (Google Calendar OAuth, free/busy)
+- [x] **Week 4:** `calendar` MCP server (Google Calendar OAuth, free/busy). Tested against
+  Google's client library with simulated responses, not yet against a live account.
 - [ ] **Week 5:** Agent loop with human-in-the-loop confirmation
 - [ ] **Week 6:** Next.js frontend
 - [ ] **Week 7:** Deploy + CI-gated evals

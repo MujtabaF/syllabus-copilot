@@ -5,6 +5,8 @@ description = "An AI agent that turns course syllabi into personalized study sch
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "google-api-python-client>=2.100",
+    "google-auth-oauthlib>=1.2",
     "litellm>=1.50",
     "mcp>=2,<3",
     "numpy>=2.0",
@@ -28,6 +30,7 @@ dev = [
 [project.scripts]
 syllabus-copilot = "syllabus_copilot.cli:main"
 course-docs-mcp = "syllabus_copilot.servers.course_docs:main"
+calendar-mcp = "syllabus_copilot.servers.google_calendar:main"
 
 [build-system]
 requires = ["hatchling"]
